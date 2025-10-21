@@ -225,13 +225,14 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
               </div>
 
               {/* WhatsApp Order Button */}
-              <button
-                onClick={handleWhatsAppOrder}
-                className="w-full bg-gradient-to-r from-green-500 to-green-600 text-white px-8 py-4 rounded-xl font-semibold flex items-center justify-center gap-3 hover:from-green-600 hover:to-green-700 transform hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 shadow-lg hover:shadow-xl mb-6"
-              >
-                <MessageCircle className="w-6 h-6" />
-                <span className="text-lg">{t('product.orderWhatsApp') || 'Order via WhatsApp'}</span>
-              </button>
+             <button
+  onClick={handleWhatsAppOrder}
+  className="w-full ios-gradient-green bg-green-600 bg-gradient-to-r from-green-500 to-green-600 text-white px-8 py-4 rounded-xl font-semibold flex items-center justify-center gap-3 hover:from-green-600 hover:to-green-700 transition-all duration-200 shadow-lg hover:shadow-xl mb-6 relative z-[999]"
+>
+  <MessageCircle className="w-6 h-6" />
+  <span className="text-lg">{t('product.orderWhatsApp') || 'Order via WhatsApp'}</span>
+</button>
+
 
               <div className="space-y-3 text-sm text-gray-600 bg-gray-50 p-4 rounded-xl border border-gray-200">
                

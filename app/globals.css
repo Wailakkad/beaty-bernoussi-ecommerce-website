@@ -24,3 +24,11 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* globals.css or app.css */
+@supports (-webkit-touch-callout: none) {
+  .ios-gradient-green {
+    background: -webkit-linear-gradient(left, #22c55e, #16a34a) !important;
+  }
+}
+
