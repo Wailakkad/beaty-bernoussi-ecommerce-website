@@ -11,11 +11,9 @@ interface Language {
 }
 
 export default function LanguageSwitcher() {
-  const { language, changeLanguage } = useLanguage() as {
-    language: 'en' | 'fr' | 'ar';
-    changeLanguage: (lang: 'en' | 'fr' | 'ar') => void;
-  };
-
+  // No type assertion needed if context is properly typed
+  const { language, changeLanguage } = useLanguage();
+  
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const languages: Language[] = [

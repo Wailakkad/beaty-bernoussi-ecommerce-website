@@ -1,11 +1,22 @@
 'use client';
-import { useState, useEffect, FormEvent } from 'react';
+import { useState, useEffect, FormEvent, useCallback } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { PRODUCTS } from '@/data/products';
 import { Star, ChevronDown, ChevronUp, Heart, Check } from 'lucide-react';
 import { useLanguage } from '@/app/context/LanguageContext';
 import Image from 'next/image';
+
+// Define the Review interface
+interface Review {
+  id: string | number;
+  productId: string | number;
+  rating: number;
+  text: string;
+  author: string;
+  date: string;
+  verified?: boolean;
+}
 
 // Skeleton loader component
 const ReviewSkeleton = () => (
@@ -25,14 +36,19 @@ export default function Reviews() {
   const [rating, setRating] = useState(5);
   const [reviewText, setReviewText] = useState('');
   const [authorName, setAuthorName] = useState('');
-  const [reviews, setReviews] = useState<any[]>([]);
+  const [reviews, setReviews] = useState<Review[]>([]); // Fixed: Using Review type
   const [expandedStates, setExpandedStates] = useState<Record<string, boolean>>({});
   const [isLoading, setIsLoading] = useState(true);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [toast, setToast] = useState<{ message: string; type: 'success' | 'error' } | null>(null);
 
-  // Fetch reviews from API
-  const fetchReviews = async () => {
+  const showToast = (message: string, type: 'success' | 'error' = 'success') => {
+    setToast({ message, type });
+    setTimeout(() => setToast(null), 3000);
+  };
+
+  // Fixed: Wrapped in useCallback
+  const fetchReviews = useCallback(async () => {
     try {
       setIsLoading(true);
       const response = await fetch('/api/reviews');
@@ -50,16 +66,13 @@ export default function Reviews() {
     } finally {
       setIsLoading(false);
     }
-  };
+  }, [t]); // Added t as dependency
 
   useEffect(() => {
     fetchReviews();
-  }, []);
+  }, [fetchReviews]); // Fixed: Added fetchReviews to dependency array
 
-  const showToast = (message: string, type: 'success' | 'error' = 'success') => {
-    setToast({ message, type });
-    setTimeout(() => setToast(null), 3000);
-  };
+
 
   const handleSubmitReview = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();

@@ -68,7 +68,7 @@ transporter.verify(function (error: Error | null) {
 
 // Helper function to format order email for store owner
 function generateStoreOwnerEmail(orderData: EnrichedOrderData): string {
-  const { customer, items, subtotal, shipping, tax, total, timestamp } = orderData;
+  const { customer, items, subtotal, shipping,  total, timestamp } = orderData;
   
   // Get the base URL from environment or use a default
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
@@ -201,7 +201,7 @@ function generateStoreOwnerEmail(orderData: EnrichedOrderData): string {
 
 // Helper function to format order confirmation email for customer
 function generateCustomerEmail(orderData: EnrichedOrderData): string {
-  const { customer, items, subtotal, shipping, tax, total, timestamp } = orderData;
+  const { customer, items, subtotal, shipping,  total, timestamp } = orderData;
   
   const itemsList = items.map((item: EnrichedCartItem) => {
     const product = item.product || { name: 'Product', price: 0 };

@@ -375,7 +375,7 @@ export default function Checkout() {
               <div className="bg-white rounded-lg p-8 sticky top-24 shadow-sm">
                 <h2 className="text-2xl font-bold mb-6">{t('checkout.orderReview') || 'Order Review'}</h2>
                 <div className="space-y-4 mb-6 max-h-96 overflow-y-auto">
-                  {cart.map((item: any) => {
+                  {cart.map((item) => {
                     const product = PRODUCTS.find(p => p.id === item.productId);
                     if (!product) return null;
                     const translatedName = getTranslatedName(product.id, product.name);

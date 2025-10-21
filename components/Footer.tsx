@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { useLanguage } from '@/app/context/LanguageContext';
 
 export default function Footer() {
-  const { t, isRTL } = useLanguage();
+  const { t } = useLanguage();
 
   return (
     <footer className="bg-gradient-to-b from-white to-pink-50 border-t border-pink-100 mt-20">
