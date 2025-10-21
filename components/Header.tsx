@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { ShoppingBag, Menu, X } from 'lucide-react';
 import LanguageSwitcher from './LanguageSwitcher';
 import { useLanguage } from '@/app/context/LanguageContext';
+import { CartItem, getCartFromStorage } from '@/lib/utils';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,9 +13,8 @@ export default function Header() {
 
   useEffect(() => {
     const updateCount = () => {
-      const cart = localStorage.getItem('beauty-cart');
-      const items = cart ? JSON.parse(cart) : [];
-      const count = items.reduce((sum: number, item: any) => sum + item.quantity, 0);
+      const items: CartItem[] = getCartFromStorage();
+      const count = items.reduce((sum, item) => sum + item.quantity, 0);
       setCartCount(count);
     };
 
@@ -29,7 +29,10 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="sticky top-0 z-50 bg-white/0 backdrop-blur-sm border-b border-gray-100/0" dir={isRTL ? 'rtl' : 'ltr'}>
+    <header
+      className="sticky top-0 z-50 bg-white/0 backdrop-blur-sm border-b border-gray-100/0"
+      dir={isRTL ? 'rtl' : 'ltr'}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <Link href="/" className="flex-shrink-0">
@@ -57,7 +60,11 @@ export default function Header() {
           <div className="flex items-center gap-4">
             <LanguageSwitcher />
 
-            <Link href="/cart" className="relative p-2 hover:bg-gray-100 rounded-lg transition" title={t('nav.cart')}>
+            <Link
+              href="/cart"
+              className="relative p-2 hover:bg-gray-100 rounded-lg transition"
+              title={t('nav.cart')}
+            >
               <ShoppingBag className="w-5 h-5" />
               {cartCount > 0 && (
                 <span className="absolute top-1 right-1 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center font-bold">
@@ -74,10 +81,18 @@ export default function Header() {
 
         {isOpen && (
           <nav className="md:hidden pb-4 flex flex-col gap-4">
-            <Link href="/" className="text-sm font-medium">{t('nav.home')}</Link>
-            <Link href="/shop" className="text-sm font-medium">{t('nav.shop')}</Link>
-            <Link href="/reviews" className="text-sm font-medium">{t('nav.reviews')}</Link>
-             <Link href="/Blog" className="text-sm font-medium">{t('nav.blog')}</Link>
+            <Link href="/" className="text-sm font-medium">
+              {t('nav.home')}
+            </Link>
+            <Link href="/shop" className="text-sm font-medium">
+              {t('nav.shop')}
+            </Link>
+            <Link href="/reviews" className="text-sm font-medium">
+              {t('nav.reviews')}
+            </Link>
+            <Link href="/Blog" className="text-sm font-medium">
+              {t('nav.blog')}
+            </Link>
           </nav>
         )}
       </div>

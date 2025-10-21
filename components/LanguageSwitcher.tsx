@@ -10,10 +10,9 @@ interface Language {
   flag: string;
 }
 
+// ✅ Make sure this is a default export
 export default function LanguageSwitcher() {
-  // No type assertion needed if context is properly typed
   const { language, changeLanguage } = useLanguage();
-  
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const languages: Language[] = [
