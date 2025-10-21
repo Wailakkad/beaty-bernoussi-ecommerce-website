@@ -1,9 +1,12 @@
+// ...existing code...
 'use client';
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 
+type Translations = Record<string, unknown>;
+
 type LanguageContextType = {
   language: 'en' | 'fr' | 'ar';
-  translations: any;
+  translations: Translations;
   changeLanguage: (lang: 'en' | 'fr' | 'ar') => void;
   t: (key: string) => string;
   isRTL: boolean;
@@ -13,36 +16,44 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
   const [language, setLanguage] = useState<'en' | 'fr' | 'ar'>('en');
-  const [translations, setTranslations] = useState<any>({});
+  const [translations, setTranslations] = useState<Translations>({});
   const [isRTL, setIsRTL] = useState(false);
 
   // Load language from localStorage on mount
   useEffect(() => {
-    const savedLang = (localStorage.getItem('language') as 'en' | 'fr' | 'ar') || 'en';
+    const savedLang =
+      (typeof window !== 'undefined' ? (localStorage.getItem('language') as 'en' | 'fr' | 'ar' | null) : null) ||
+      'en';
     setLanguage(savedLang);
     setIsRTL(savedLang === 'ar');
-    loadTranslations(savedLang);
+    void loadTranslations(savedLang);
   }, []);
 
   // Update document when language changes
   useEffect(() => {
-    loadTranslations(language);
+    void loadTranslations(language);
     setIsRTL(language === 'ar');
-    
-    // Update HTML attributes
-    document.documentElement.lang = language;
-    document.documentElement.dir = language === 'ar' ? 'rtl' : 'ltr';
-    document.documentElement.setAttribute('dir', language === 'ar' ? 'rtl' : 'ltr');
-    
-    // Save to localStorage
-    localStorage.setItem('language', language);
+
+    if (typeof document !== 'undefined') {
+      document.documentElement.lang = language;
+      document.documentElement.dir = language === 'ar' ? 'rtl' : 'ltr';
+      document.documentElement.setAttribute('dir', language === 'ar' ? 'rtl' : 'ltr');
+    }
+
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('language', language);
+    }
   }, [language]);
 
   const loadTranslations = async (lang: 'en' | 'fr' | 'ar') => {
     try {
       const response = await fetch(`/locales/${lang}.json`);
-      const data = await response.json();
-      setTranslations(data);
+      const data: unknown = await response.json();
+      if (typeof data === 'object' && data !== null) {
+        setTranslations(data as Translations);
+      } else {
+        console.warn('Translations file did not return an object:', data);
+      }
     } catch (error) {
       console.error('Error loading translations:', error);
     }
@@ -54,13 +65,24 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
 
   const t = (key: string): string => {
     const keys = key.split('.');
-    let value: any = translations;
-    
+    let value: unknown = translations;
+
     for (const k of keys) {
-      value = value?.[k];
+      if (typeof value === 'object' && value !== null && k in (value as Record<string, unknown>)) {
+        value = (value as Record<string, unknown>)[k];
+      } else {
+        value = undefined;
+        break;
+      }
     }
-    
-    return value || key;
+
+    if (typeof value === 'string') return value;
+    if (value === undefined) return key;
+    try {
+      return String(value);
+    } catch {
+      return key;
+    }
   };
 
   return (
@@ -77,3 +99,4 @@ export function useLanguage() {
   }
   return context;
 }
+// ...existing code...
