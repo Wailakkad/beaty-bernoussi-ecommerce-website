@@ -53,7 +53,10 @@ export default function Cart() {
           {cartItems.length === 0 ? (
             <div className="text-center py-16">
               <p className="text-xl text-gray-600 mb-6">{t('cart.empty')}</p>
-              <Link href="/shop" className="btn-primary">
+              <Link
+                href="/shop"
+                className="inline-block px-6 py-3 bg-black text-white rounded-lg hover:bg-gray-800 transition-all duration-200 shadow-md hover:shadow-lg"
+              >
                 {t('cart.continueShopping')}
               </Link>
             </div>
@@ -69,9 +72,7 @@ export default function Cart() {
                   
                   return (
                     <div key={product.id} className="bg-white p-4 sm:p-6 rounded-lg border border-gray-200">
-                      {/* Mobile Layout: Stack vertically */}
                       <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
-                        {/* Product Image */}
                         <div className="flex-shrink-0 mx-auto sm:mx-0">
                           <Image
                             src={product.image}
@@ -82,7 +83,6 @@ export default function Cart() {
                           />
                         </div>
                         
-                        {/* Product Details */}
                         <div className="flex-1 flex flex-col">
                           <div className="flex justify-between items-start gap-2 mb-3">
                             <div className="flex-1">
@@ -100,17 +100,17 @@ export default function Cart() {
                           
                           {/* Quantity and Price */}
                           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 mt-auto">
-                            <div className="flex items-center border border-gray-300 rounded">
+                            <div className="flex items-center border border-gray-300 rounded overflow-hidden">
                               <button
                                 onClick={() => updateQuantity(product.id, item.quantity - 1)}
-                                className="px-3 py-1 hover:bg-gray-100"
+                                className="px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold transition-all duration-150"
                               >
                                 −
                               </button>
-                              <span className="px-4 py-1">{item.quantity}</span>
+                              <span className="px-5 py-2 text-gray-800 font-medium bg-white">{item.quantity}</span>
                               <button
                                 onClick={() => updateQuantity(product.id, item.quantity + 1)}
-                                className="px-3 py-1 hover:bg-gray-100"
+                                className="px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold transition-all duration-150"
                               >
                                 +
                               </button>
@@ -136,16 +136,24 @@ export default function Cart() {
                     <span>{t('cart.shipping')}</span>
                     <span>{shipping === 0 ? t('cart.free') : `${t('currency')}${shipping.toFixed(2)}`}</span>
                   </div>
-                  
                 </div>
+
                 <div className="flex justify-between text-xl sm:text-2xl font-bold mb-6 sm:mb-8">
                   <span>{t('cart.total')}</span>
                   <span className="luxury-gold">{t('currency')}{total.toFixed(2)}</span>
                 </div>
-                <Link href="/checkout" className="btn-primary w-full text-center block">
+
+                {/* Improved button styling */}
+                <Link
+                  href="/checkout"
+                  className="block w-full text-center px-6 py-3 rounded-lg bg-gradient-to-r from-black to-gray-800 text-white font-semibold hover:from-gray-800 hover:to-black transition-all duration-300 shadow-md hover:shadow-xl"
+                >
                   {t('cart.checkout')}
                 </Link>
-                <Link href="/shop" className="btn-secondary w-full text-center mt-3 block">
+                <Link
+                  href="/shop"
+                  className="block w-full text-center mt-3 px-6 py-3 rounded-lg border border-gray-800 text-gray-800 font-semibold hover:bg-gray-800 hover:text-white transition-all duration-300 shadow-sm hover:shadow-md"
+                >
                   {t('cart.continueShopping')}
                 </Link>
               </div>

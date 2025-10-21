@@ -63,8 +63,8 @@ export default function Checkout() {
     return sum + (product?.price || 0) * item.quantity;
   }, 0);
   const shipping = subtotal > 500 ? 0 : 50;
-  const tax = subtotal * 0.08;
-  const total = subtotal + shipping + tax;
+  
+  const total = subtotal + shipping;
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -88,7 +88,7 @@ export default function Checkout() {
         })),
         subtotal: parseFloat(subtotal.toFixed(2)),
         shipping: parseFloat(shipping.toFixed(2)),
-        tax: parseFloat(tax.toFixed(2)),
+        
         total: parseFloat(total.toFixed(2)),
         timestamp: new Date().toISOString(),
       };
@@ -371,7 +371,7 @@ export default function Checkout() {
                 <button 
                   type="submit" 
                   disabled={isSubmitting || cart.length === 0}
-                  className="btn-primary w-full mt-8 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
+                  className="block w-full text-center px-6 py-3 rounded-lg bg-gradient-to-r from-black to-gray-800 text-white font-semibold hover:from-gray-800 hover:to-black transition-all duration-300 shadow-md hover:shadow-xl"
                 >
                   {isSubmitting ? (
                     <>
@@ -429,10 +429,7 @@ export default function Checkout() {
                     <span>{t('checkout.shipping') || 'Shipping'}</span>
                     <span>{shipping === 0 ? (t('checkout.free') || 'FREE') : `${shipping.toFixed(2)} ${t('currency') || 'MAD'}`}</span>
                   </div>
-                  <div className="flex justify-between text-gray-600">
-                    <span>{t('checkout.tax') || 'Tax'} (8%)</span>
-                    <span>{tax.toFixed(2)} {t('currency') || 'MAD'}</span>
-                  </div>
+                  
                   <div className="flex justify-between text-2xl font-bold text-gray-900 pt-6 border-t">
                     <span>{t('checkout.total') || 'Total'}</span>
                     <span className="luxury-gold">{total.toFixed(2)} {t('currency') || 'MAD'}</span>
