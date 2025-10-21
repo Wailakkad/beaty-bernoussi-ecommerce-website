@@ -1,0 +1,639 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "shop": "Boutique",
+    "reviews": "Avis",
+    "cart": "Panier",
+    "checkout": "Passer la commande",
+    "blog": "Blog"
+  },
+  "hero": {
+    "tagline": "Le Luxe Beauté Redéfini",
+    "title1": "Découvrez Votre",
+    "title2": "Beauté",
+    "title3": "Bernoussi",
+    "description": "Expérimentez le summum du soin de la peau et de la beauté de luxe. Métticuleusement élaborés avec des ingrédients premium pour la femme exigeante.",
+    "btnExplore": "Explorer la Collection",
+    "btnLearn": "En Savoir Plus",
+    "stats1": "150+",
+    "stats1Text": "Produits Premium",
+    "stats2": "50",
+    "stats2Text": "Clients Heureux",
+    "stats3": "4.9★",
+    "stats3Text": "Note Moyenne"
+  },
+  "categories": {
+    "title": "Catégories en Vedette",
+    "skincare": "Soins de la Peau",
+    "makeup": "Maquillage",
+    "tools": "Outils",
+    "shopNow": "Acheter Maintenant"
+  },
+  "bestsellers": {
+    "badge": "Sélectionné Pour Vous",
+    "title": "Meilleurs Vendeurs",
+    "description": "Découvrez nos essentiels de luxe les plus convoités, adorés par des milliers de personnes",
+    "view": "Voir",
+    "topRated": "Très Apprécié"
+  },
+  "story": {
+    "title": "Notre Histoire de Luxe",
+    "text1": "Beauty Bernoussi représente le summum des soins de la peau et de la beauté de luxe. Chaque produit est métticuleusement élaboré avec des ingrédients premium provenant du monde entier. Nous croyons que la beauté doit être une indulgence—un moment de pur luxe dans votre routine quotidienne.",
+    "text2": "Fondée sur le principe que les produits de beauté exceptionnels méritent une présentation exceptionnelle, Beauty Bernoussi combine la science, la nature et le luxe dans chaque flacon."
+  },
+  "natural": {
+    "badge": "Formule Beauté Naturelle",
+    "title1": "Beauté Naturelle",
+    "title2": "Pur Soin",
+    "description": "Expérimentez le pouvoir transformateur de la nature avec notre collection de beauté premium. Chaque produit est soigneusement formulé avec des extraits botaniques et des nutriments essentiels pour améliorer votre luminosité naturelle.",
+    "feature1": "Ingrédients certifiés biologiques",
+    "feature2": "Formule testée dermatologiquement",
+    "feature3": "Éthique et végan",
+    "feature4": "Résultats visibles en 2 semaines",
+    "btnDiscover": "Découvrir Plus",
+    "btnView": "Voir la Collection",
+    "badgeText": "100% Naturel"
+  },
+  "arrivals": {
+    "title": "Nouvelles Arrivées",
+    "badge": "Nouveau"
+  },
+  "newsletter": {
+    "title": "Rejoignez Notre Cercle",
+    "description": "Accédez exclusivement à de nouveaux lancements, conseils beauté et offres spéciales. Devenez membre de notre communauté de beauté de luxe.",
+    "placeholder": "Entrez votre email",
+    "btnSubscribe": "S'abonner",
+    "thankYou": "Merci de votre abonnement !",
+    "checkInbox": "Vérifiez votre boîte de réception pour les offres exclusives",
+    "secure": "100% Sécurisé",
+    "noSpam": "Pas de Spam",
+    "unsubscribe": "Se désabonner à Tout Moment"
+  },
+  
+  "shop": {
+  "title": "Découvrez Notre Collection",
+  "subtitle": "Produits de beauté de luxe sélectionnés pour tous les types de peau et préférences",
+  "category": "Catégorie",
+  "type": "Type",
+  "priceRange": "Gamme de Prix",
+  "products": "produits",
+  "popularity": "Popularité",
+  "newest": "Les Plus Nouveaux",
+  "priceLow": "Prix : Du Plus Bas au Plus Haut",
+  "priceHigh": "Prix : Du Plus Haut au Plus Bas",
+  "noProducts": "Aucun produit trouvé.",
+  "tryAdjusting": "Essayez d'ajuster vos filtres pour voir plus de résultats.",
+  "new": "Nouveau",
+  "view": "Voir",
+  "categories": {
+    "skincare": "Soins de la Peau",
+    "makeup": "Maquillage",
+    "tools": "Outils"
+  },
+  "types": {
+    "Shampooings": "Shampooings",
+    "Crèmes de nuit": "Crèmes de Nuit",
+    "Huiles végétales": "Huiles Végétales",
+    "Protection chaleur": "Protection Thermique",
+    "Foundations": "Fonds de Teint",
+    "Lipsticks": "Rouges à Lèvres",
+    "Brushes": "Pinceaux"
+  }
+  
+  
+},
+"products": {
+  "1": {
+    "name": "Balea Professional Shampooing Cuir Chevelu Sensible",
+    "description": "Shampooing doux sans silicones qui apaise le cuir chevelu sensible et laisse les cheveux souples et brillants.",
+    "fullDescription": "Formulé pour l'équilibre du microbiome du cuir chevelu, ce shampooing associe panthénol et extrait de thé blanc pour calmer les irritations et hydrater en douceur. Idéal pour les cuirs chevelus sensibles ou secs. Mousse fine, rinçage facile, usage fréquent.",
+    "ingredients": ["Panthénol", "Extrait de thé blanc", "Tensioactifs doux d'origine végétale", "Glycérine"],
+    "skinType": ["Cuir chevelu sensible", "Cheveux secs"],
+    "usage": "Masser sur cuir chevelu et cheveux mouillés pendant 2-3 minutes puis rincer. Répéter si nécessaire."
+  },
+  "2": {
+    "name": "Balea Professional Shampooing Réparation Kératine",
+    "description": "Shampooing réparateur sans silicones à la kératine et aux peptides. Renforce la fibre et aide à réduire la casse.",
+    "fullDescription": "Grâce à sa technologie pro-strength, ce shampooing nourrit la fibre capillaire avec de la kératine et des peptides pour combler les zones fragilisées. Les cheveux sont plus résistants, brillants et faciles à coiffer. Idéal pour cheveux cassants et abîmés.",
+    "ingredients": ["Kératine", "Peptides", "Panthénol", "Agents conditionneurs légers"],
+    "skinType": ["Cheveux cassants", "Cheveux abîmés"],
+    "usage": "Appliquer sur cheveux mouillés, masser délicatement, rincer. Pour un résultat optimal, poursuivre avec un soin réparateur."
+  },
+  "3": {
+    "name": "Balea Professional Shampooing Aqua Hyaluron",
+    "description": "Shampooing hydratant sans silicones à l'acide hyaluronique et à l'aloe vera. Redonne souplesse et brillance.",
+    "fullDescription": "La formule infusée d'acide hyaluronique et d'aloe vera (jus jusqu'à 40%) attire et retient l'humidité au cœur de la fibre. Les cheveux secs et déshydratés retrouvent confort, douceur et vitalité. Mousse aérienne, parfum frais.",
+    "ingredients": ["Acide hyaluronique", "Aloe vera", "Glycérine", "Tensioactifs doux"],
+    "skinType": ["Cheveux secs", "Cheveux déshydratés"],
+    "usage": "Répartir sur cuir chevelu et longueurs mouillés, masser puis rincer abondamment. Peut s'utiliser au quotidien."
+  },
+  "4": {
+    "name": "dmBio Huile de Coco Vierge 300 ml",
+    "description": "Huile de coco 100% vierge, biologique, pressée à froid. Non raffinée et non désodorisée.",
+    "fullDescription": "Polyvalente, l'huile de coco dmBio est issue de l'agriculture biologique. Sa texture fondante et son arôme naturel conviennent à la cuisine (cuisson douce, pâtisserie) et aux rituels beauté (peau, cheveux). Vegan, bocal 300 ml.",
+    "ingredients": ["100% huile de noix de coco biologique"],
+    "skinType": ["Tous types de peau et de cheveux"],
+    "usage": "Chauffer légèrement si nécessaire. En beauté: appliquer une petite quantité sur peau ou pointes des cheveux."
+  },
+  "5": {
+    "name": "Balea Crème de Nuit Niacinamide 10%",
+    "description": "Crème de nuit sans parfum avec 10% de niacinamide et 5% d'huile de pépins de raisin. Lisse le grain de peau et soutient la régénération nocturne.",
+    "fullDescription": "Cette formule légère et non parfumée associe 10% de niacinamide pour affiner l'apparence des pores et renforcer la barrière cutanée, à 5% d'huile de pépins de raisin émolliente. Au réveil, la peau paraît plus nette, souple et équilibrée.",
+    "ingredients": ["Niacinamide (10%)", "Huile de pépins de raisin (5%)", "Glycérine", "Panthénol"],
+    "skinType": ["Tous types de peau, même sensibles", "Peaux mixtes à grasses"],
+    "usage": "Appliquer le soir sur peau propre après le sérum. Éviter le contour immédiat des yeux. Utiliser une protection solaire le matin."
+  },
+  "6": {
+    "name": "Balea Professional Shampooing Réparation Intensive",
+    "description": "Shampooing réparation intense sans silicones avec complexe de 3 huiles et kératine. Nourrit les cheveux très secs et abîmés.",
+    "fullDescription": "La formule riche combine un complexe de trois huiles végétales et de la kératine pour lisser la surface du cheveu, réduire la casse et redonner de la brillance. Idéal pour cheveux extrêmement desséchés, traités ou fragilisés.",
+    "ingredients": ["Complexe de 3 huiles végétales", "Kératine", "Glycérine", "Agents conditionneurs"],
+    "skinType": ["Cheveux très abîmés", "Cheveux secs"],
+    "usage": "Appliquer sur cuir chevelu et longueurs mouillés, masser délicatement puis rincer. Compléter par un après-shampooing nourrissant."
+  },
+  "7": {
+    "name": "Balea Spray Thermoprotecteur 220°C",
+    "description": "Spray bi-phase thermoprotecteur jusqu'à 220°C. Protège pendant le coiffage et laisse les cheveux souples et brillants.",
+    "fullDescription": "Sa formule en deux phases associe des polymères protecteurs de chaleur à des agents soin (panthénol, huiles légères) pour limiter les dommages liés aux appareils chauffants. Effet anti-frisottis et toucher doux sans alourdir, vegan.",
+    "ingredients": ["Polymères thermoprotecteurs", "Panthénol", "Huiles légères", "Glycérine"],
+    "skinType": ["Tous types de cheveux"],
+    "usage": "Agiter pour mélanger les deux phases. Vaporiser uniformément sur cheveux humides ou secs avant brushing, lissage ou bouclage. Ne pas rincer."
+  },"8": {
+    "name": "alverde All‑in‑One Care Oil",
+    "description": "All‑in‑one care oil for face, body and hair. Nourishes, softens and leaves a satin finish. Certified natural, vegan.",
+    "fullDescription": "Minimalist formula rich in plant oils (sunflower, sweet almond, coconut) and vitamin E. Multi‑purpose: massage, body care, bath oil or for hair ends. Silicone‑ and microplastic‑free, naturally derived fragrance.",
+    "ingredients": ["Vegetable oils (sunflower, sweet almond, coconut)", "Vitamin E", "Naturally derived fragrance"],
+    "skinType": ["Dry skin", "Normal skin", "Dry hair"],
+    "usage": "Apply a few drops to slightly damp skin. For hair: 1–3 drops to the ends or as a pre‑shampoo oil bath."
+  },
+  "9": {
+    "name": "Balea Natural Beauty Care Oil",
+    "description": "Lightweight care oil for body and hair. Non‑greasy finish with a soft scent. Vegan.",
+    "fullDescription": "Blend of light oils to nourish and protect skin and lengths without weighing down. Ideal for a natural glow and for smoothing hair ends. Dermatologically tested.",
+    "ingredients": ["Seed oils (hemp/grape)", "Sweet almond oil", "Vitamin E", "Fragrance"],
+    "skinType": ["Normal to dry skin", "Dry hair"],
+    "usage": "Apply 2–3 drops to damp skin. For hair: distribute a small amount through lengths/ends. Do not rinse."
+  },
+  "10": {
+    "name": "alverde Hair Tonic Strength & Power",
+    "description": "Leave‑in scalp tonic. Refreshing, strengthening feel—ideal for fine, tired hair.",
+    "fullDescription": "Formulated with stimulating caffeine, plant extracts (rosemary, nettle) and panthenol to soothe the scalp. Helps energize roots without weighing hair down. Certified natural cosmetics, vegan.",
+    "ingredients": ["Caffeine", "Rosemary extract", "Nettle extract", "Panthenol", "Glycerin"],
+    "skinType": ["Normal scalp", "Fine hair", "Weakened hair"],
+    "usage": "Apply along partings to clean scalp, massage gently and do not rinse. Use daily or after each wash."
+  },
+  "11": {
+    "name": "Balea Moisturizing Day Cream SPF 15 (10% Aloe Vera)",
+    "description": "Light day cream with 10% aloe vera and Hydro‑Complex. SPF 15 protection. For normal to combination skin.",
+    "fullDescription": "Provides lasting hydration, helps strengthen the skin barrier and delivers everyday radiance. UV filters for daily protection (SPF 15). Vegan.",
+    "ingredients": ["Aloe vera (10%)", "Hydro‑Complex", "Glycerin", "UV filters SPF 15", "Vitamin E"],
+    "skinType": ["Normal skin", "Combination skin"],
+    "usage": "Apply every morning to clean face and neck. Reapply with prolonged sun exposure. Avoid the eye contour."
+  },
+  "12": {
+    "name": "alverde Strength & Power Shampoo",
+    "description": "Silicone‑free strengthening shampoo for fine, flat hair. Certified natural cosmetics.",
+    "fullDescription": "With caffeine and botanical extracts to energize the fiber and add volume without weighing hair down. Gentle cleansers, light foam, vegan.",
+    "ingredients": ["Caffeine", "Fortifying botanical extracts", "Wheat proteins", "Glycerin", "Mild surfactants"],
+    "skinType": ["Fine hair", "Flat hair", "All scalp types"],
+    "usage": "Massage onto wet scalp and lengths, leave on 1–2 minutes, then rinse."
+  },
+  "13": {
+    "name": "ISANA Lemon & Lime Shower Gel",
+    "description": "Refreshing shower gel with lemon & lime scent. Gently cleanses and leaves skin fresh.",
+    "fullDescription": "With a soft‑care complex and glycerin to help maintain moisture. Zesty citrus fragrance. Vegan.",
+    "ingredients": ["Mild cleansing agents", "Glycerin", "Citrus extract", "Fragrance"],
+    "skinType": ["All skin types"],
+    "usage": "Lather on wet skin and rinse. Avoid contact with eyes."
+  },
+  "14": {
+    "name": "Balea Almond Blossom & Magnolia Cream Shower",
+    "description": "Velvety cream shower with almond and magnolia scent. Gently cleanses and leaves skin soft.",
+    "fullDescription": "Creamy lather with humectants to help retain moisture. Skin‑friendly pH, vegan.",
+    "ingredients": ["Mild cleansing agents", "Glycerin", "Almond & magnolia fragrance", "Panthenol"],
+    "skinType": ["Dry skin", "Normal skin"],
+    "usage": "Apply to wet skin, massage and rinse. Suitable for daily use."
+  },
+  "15": {
+    "name": "Balea Déodorant Parfumé Pink Blossom",
+    "description": "Déodorant spray 0 % sels d’aluminium au parfum floral longue durée. Protection 24 h.",
+    "fullDescription": "Brouillard déodorant au sillage floral délicat qui rafraîchit toute la journée sans sels d’aluminium. Vegan.",
+    "ingredients": ["0 % sels d’aluminium", "Parfum floral", "Glycérine", "Agents désodorisants"],
+    "skinType": ["Tous types de peau"],
+    "usage": "Bien agiter. Vaporiser sur aisselles propres à 15 cm. Laisser sécher avant de s’habiller."
+  },
+  "16": {
+    "name": "alverde Gel Douche Soin Menthe & Bergamote bio",
+    "description": "Gel douche vivifiant à la menthe bio et bergamote bio. Nettoie en douceur.",
+    "fullDescription": "Tensioactifs doux d’origine végétale et glycérine pour préserver l’hydratation. Cosmétique naturelle certifiée, vegan.",
+    "ingredients": ["Extrait de menthe bio", "Extrait de bergamote bio", "Glycérine", "Tensioactifs doux"],
+    "skinType": ["Tous types de peau"],
+    "usage": "Faire mousser sur peau humide puis rincer abondamment."
+  },
+  "17": {
+    "name": "Balea Beauty Collagen Sérum au Rétinol",
+    "description": "Sérum rétinol avec complexe pro‑collagène. Lisse et raffermit visiblement.",
+    "fullDescription": "Aide à soutenir la production de collagène, réduit l’apparence des rides et améliore la fermeté. Introduire progressivement le soir et utiliser une protection solaire le lendemain.",
+    "ingredients": ["Rétinol/Retinyl", "Complexe pro‑collagène", "Acide hyaluronique", "Glycérine"],
+    "skinType": ["Peaux normales", "Peaux matures"],
+    "usage": "Le soir, appliquer 2–3 gouttes sur peau propre 2–3 fois/semaine puis augmenter. Éviter le contour des yeux. Utiliser un SPF le matin."
+  },
+  "18": {
+    "name": "Balea Sérum Vitamine C",
+    "description": "Sérum illuminateur à la vitamine C, action antioxydante.",
+    "fullDescription": "Vitamine C stabilisée pour raviver l’éclat, aider à uniformiser le teint et protéger du stress oxydatif. Idéal le matin, à associer à un SPF.",
+    "ingredients": ["Vitamine C stabilisée", "Acide hyaluronique", "Glycérine", "Antioxydants"],
+    "skinType": ["Tous types de peau", "Teint terne", "Taches et irrégularités"],
+    "usage": "Appliquer 2–3 gouttes sur visage propre matin et/ou soir, puis hydrater. Utiliser un SPF le matin."
+  },
+  "19": {
+    "name": "Balea Beauty Hyaluron Serum",
+    "description": "Sérum hydratant à 7 formes d’acide hyaluronique. Effet repulpant immédiat.",
+    "fullDescription": "Combinaison d’acides hyaluroniques de différents poids moléculaires pour capter l’eau, lisser les ridules et repulper la peau. Convient à tous.",
+    "ingredients": ["Acide hyaluronique multi‑poids", "Glycérine", "Panthénol"],
+    "skinType": ["Tous types de peau", "Peaux déshydratées"],
+    "usage": "Appliquer matin et soir sur peau légèrement humide puis sceller avec une crème."
+  },
+  "20": {
+    "name": "Balea Sérum Niacinamide 10% + Zinc 1%",
+    "description": "Affîne le grain de peau, réduit les pores et la brillance.",
+    "fullDescription": "Formule non parfumée avec niacinamide pour renforcer la barrière cutanée et atténuer les irrégularités, et zinc pour équilibrer le sébum.",
+    "ingredients": ["Niacinamide 10 %", "Zinc PCA 1 %", "Glycérine"],
+    "skinType": ["Peaux mixtes à grasses", "Tous types de peau"],
+    "usage": "Appliquer matin et/ou soir après le nettoyage et avant la crème. Test cutané préalable recommandé."
+  },
+  "21": {
+    "name": "Mixa La Crème – Peaux Très Sèches",
+    "description": "Crème multi‑usages nourrissante pour peaux très sèches et sensibles.",
+    "fullDescription": "Riche en glycérine, huiles végétales et beurre de karité pour une nutrition intense du visage, du corps et des mains. Apaise dès l’application.",
+    "ingredients": ["Glycérine", "Huiles végétales", "Beurre de karité", "Allantoïne"],
+    "skinType": ["Peaux très sèches", "Peaux sensibles"],
+    "usage": "Appliquer généreusement sur les zones sèches du visage et du corps aussi souvent que nécessaire."
+  },
+  "22": {
+    "name": "Balea Melkfett Calendula – Baume Protecteur",
+    "description": "Baume protecteur à la calendula pour peaux sèches et gercées.",
+    "fullDescription": "Base vaseline formant un film barrière avec extrait de calendula pour apaiser et limiter la perte d’eau. Idéal pour mains, coudes, talons.",
+    "ingredients": ["Vaseline/Paraffine", "Extrait de calendula", "Cires protectrices"],
+    "skinType": ["Peaux sèches", "Zones rugueuses et gercées"],
+    "usage": "Appliquer une fine couche sur les zones concernées aussi souvent que nécessaire."
+  },
+  "23": {
+    "name": "Balea Soin Contour des Yeux Énergisant (10 % Aloe Vera)",
+    "description": "Soin yeux sans parfum avec caféine, vitamine C et Hydro‑Complex. Décongestionne poches et cernes.",
+    "fullDescription": "Texture légère adaptée au contour de l’œil sensible. Apporte fraîcheur immédiate et hydratation durable.",
+    "ingredients": ["Aloe vera 10 %", "Caféine", "Vitamine C", "Hydro‑Complex"],
+    "skinType": ["Tous types de peau", "Contour des yeux fatigué", "Peau sensible"],
+    "usage": "Appliquer une petite quantité matin et soir en tapotant délicatement sur le contour de l’œil."
+  },
+  "24": {
+    "name": "Diadermine Essentiel BIO Crème Hydratante Jour",
+    "description": "Crème de jour hydratante enrichie en prébiotiques d’origine naturelle. 99 % d’ingrédients d’origine naturelle.",
+    "fullDescription": "Aide à respecter l’équilibre du microbiome cutané et à renforcer la barrière protectrice. Certifiée bio, fabriquée en France.",
+    "ingredients": ["Prébiotiques d’origine naturelle", "Extraits botaniques bio", "Glycérine"],
+    "skinType": ["Peaux normales à sèches", "Peaux sensibles"],
+    "usage": "Appliquer chaque matin sur visage et cou nettoyés."
+  },
+  "25": {
+    "name": "Balea Crème Yeux Urée 10 % (sans parfum)",
+    "description": "Hydratation intense et apaisement du contour des yeux très sec et sensible.",
+    "fullDescription": "Urée 10 % pour lutter contre la sécheresse, panthénol apaisant et glycérine pour retenir l’eau. Formule douce, sans parfum.",
+    "ingredients": ["Urée 10 %", "Panthénol", "Glycérine"],
+    "skinType": ["Peaux très sèches", "Peaux sensibles"],
+    "usage": "Déposer une quantité équivalente à un grain de riz et tapoter délicatement matin et soir."
+  },
+  "26": {
+    "name": "Balea Crème Mains Glamorous Moment",
+    "description": "Crème mains au parfum oriental‑floral. Nourrit les mains sèches.",
+    "fullDescription": "Enrichie en agents hydratants et beurre de karité pour des mains douces et nourries au quotidien. Vegan.",
+    "ingredients": ["Glycérine", "Beurre de karité", "Huiles végétales", "Parfum oriental‑floral"],
+    "skinType": ["Mains sèches"],
+    "usage": "Masser sur les mains et les ongles aussi souvent que nécessaire, notamment après le lavage."
+  },
+  "27": {
+    "name": "Balea Baume Mains & Ongles Camomille",
+    "description": "Soin apaisant et protecteur avec extrait de camomille et panthénol.",
+    "fullDescription": "Hydrate, réduit les rougeurs et prend soin des cuticules. Texture légère, usage fréquent.",
+    "ingredients": ["Extrait de camomille", "Panthénol (Provitamine B5)", "Glycérine", "Allantoïne"],
+    "skinType": ["Mains sollicitées", "Peau sensible"],
+    "usage": "Appliquer régulièrement sur mains et ongles jusqu’à absorption complète."
+  },
+  "28": {
+    "name": "Neutrogena Lait Corps Deep Moisture – Absorption Immédiate",
+    "description": "Hydratation intense jusqu’à 48 h avec la Formule Norvégienne. Pénètre rapidement.",
+    "fullDescription": "Nourrit la peau sèche et la rend douce dès la première application, sans effet collant.",
+    "ingredients": ["Formule Norvégienne", "Glycérine", "Agents émollients"],
+    "skinType": ["Peaux sèches"],
+    "usage": "Appliquer quotidiennement sur tout le corps, idéalement après la douche."
+  },
+  "29": {
+    "name": "Balea Déo‑Bodyspray Coconut Cancun",
+    "description": "Spray déodorant corporel 0 % sels d’aluminium, parfum coco & pêche. Fraîcheur 24 h.",
+    "fullDescription": "Formule déodorante douce sans sels d’aluminium (ACH) pour neutraliser les odeurs tout en laissant un voile fruité de noix de coco et de pêche. Vegan.",
+    "ingredients": ["0 % sels d’aluminium (ACH)", "Agents désodorisants", "Glycérine", "Parfum coco & pêche"],
+    "skinType": ["Tous types de peau"],
+    "usage": "Vaporiser sur aisselles propres et sèches à 15 cm. Laisser sécher. Ne pas utiliser sur peau irritée."
+  },
+  "30": {
+"name": "Neutrogena Deep Moisture Sensitive Bodylotion Sans Parfum",
+"description": "Lotion corps sans parfum pour peaux sensibles. Hydratation 48 h inspirée de la Formule Norvégienne.",
+"fullDescription": "Forte concentration en glycérine pour hydrater intensément et apaiser immédiatement sans film gras. Testée dermatologiquement sur peaux sensibles.",
+"ingredients": ["Formule Norvégienne", "Glycérine", "Panthénol", "Émollients"],
+"skinType": ["Peaux sèches et sensibles"],
+"usage": "Appliquer quotidiennement sur tout le corps, idéalement après la douche. Réappliquer sur les zones très sèches."
+},
+"31": {
+"name": "Balea Baume After Shave Intim Sans Parfum",
+"description": "Baume apaisant pour la zone intime, aide à prévenir les irritations après rasage. Sans parfum.",
+"fullDescription": "Avec acide lactique pour soutenir le pH naturel, aloe vera et extrait de fleur de pêcher pour hydrater et calmer. Vegan.",
+"ingredients": ["Acide lactique", "Aloe vera", "Extrait de fleur de pêcher", "Glycérine"],
+"skinType": ["Peaux sensibles"],
+"usage": "Appliquer en fine couche sur la zone intime externe après rasage, sur peau propre et sèche. Ne pas rincer."
+},
+"32": {
+"name": "Balea Vaseline – Qualité Pharmacopée Européenne",
+"description": "Vaseline pure qui protège, adoucit et répare les zones très sèches.",
+"fullDescription": "Crée une barrière occlusive pour retenir l’hydratation. Idéale pour lèvres, cuticules, coudes et talons. Sans parfum.",
+"ingredients": ["Petrolatum"],
+"skinType": ["Peaux sèches", "Peaux sensibles"],
+"usage": "Appliquer une petite quantité sur les zones sèches ou gercées selon le besoin. Ne pas utiliser sur plaies ouvertes."
+},
+"33": {
+"name": "Balea 5in1 Protection Anti‑Transpirant Spray 48h",
+"description": "Protection anti‑transpirante 48 h contre transpiration et odeurs. Réduit les marques blanches/jaunes. Sans alcool (éthanol).",
+"fullDescription": "5 bénéfices: fraîcheur longue durée, contrôle des odeurs, anti traces blanches, anti traces jaunes, soin doux de la peau. Vegan.",
+"ingredients": ["Sels d’aluminium (ACH)", "Agents anti‑traces", "Glycérine", "Parfum"],
+"skinType": ["Tous types de peau"],
+"usage": "Agiter puis vaporiser à 15 cm sur peau propre et sèche. Laisser sécher avant de s’habiller. Ne pas utiliser sur peau irritée."
+},
+"34": {
+"name": "Balea Sweet Sunshine Déodorant Roll‑On 0% Aluminium",
+"description": "Déodorant sans sels d’aluminium au parfum tropical. 24 h de fraîcheur.",
+"fullDescription": "Neutralise les odeurs sans bloquer la transpiration. Parfum ananas & pastèque. Vegan.",
+"ingredients": ["0% sels d’aluminium (ACH)", "Agents déodorants", "Glycérine", "Parfum fruits tropicaux"],
+"skinType": ["Tous types de peau"],
+"usage": "Appliquer sur aisselles propres et sèches et laisser sécher. Ne pas utiliser sur peau irritée."
+},
+"35": {
+    "name": "Balea Huile Démaquillante à l’Argan – Sans Parfum",
+    "description": "Huile nettoyante visage qui dissout le maquillage (même waterproof) sans dessécher. Sans parfum.",
+    "fullDescription": "Se transforme en lait au contact de l’eau pour rincer facilement. Enrichie en huile d’argan nourrissante pour laisser la peau souple et confortable. Idéale pour les peaux sèches. Vegan.",
+    "ingredients": ["Huile d’argan", "Émollients doux", "Tensioactifs solubles", "Vitamine E"],
+    "skinType": ["Peaux sèches", "Peaux sensibles"],
+    "usage": "Masser 2–3 pressions sur peau sèche (yeux inclus), émulsionner avec un peu d’eau puis rincer. Utiliser matin et/ou soir."
+  },
+  "36": {
+    "name": "Balea Lotion Tonique Hydratante à l’Aloé Vera",
+    "description": "Tonique qui nettoie, clarifie et rafraîchit avec Hydro‑Complex et aloé vera.",
+    "fullDescription": "Élimine les derniers résidus après le nettoyage, rééquilibre le pH et prépare la peau aux soins. Pour peaux normales et mixtes. Vegan.",
+    "ingredients": ["Aloé vera", "Glycérine", "Panthénol", "Hydro‑Complex"],
+    "skinType": ["Peaux normales", "Peaux mixtes"],
+    "usage": "Appliquer sur un coton et passer délicatement sur le visage nettoyé. Ne pas rincer. Éviter le contact direct avec les yeux."
+  },
+  "37": {
+    "name": "Balea Lotion Tonique Apaisante – Fleur d’Amandier (Sans alcool)",
+    "description": "Lotion tonique douce sans alcool qui nettoie et apaise. Pour peaux sèches et sensibles.",
+    "fullDescription": "À l’extrait de fleur d’amandier et à la glycérine pour apporter confort et douceur. Retire les résidus de calcaire et de nettoyant. Vegan.",
+    "ingredients": ["Extrait de fleur d’amandier", "Glycérine", "Panthénol", "Allantoïne"],
+    "skinType": ["Peaux sèches", "Peaux sensibles"],
+    "usage": "Après le nettoyage, appliquer sur un coton et passer sur le visage. Ne pas rincer. Utiliser matin et soir."
+  },
+  "38": {
+    "name": "Cien Eau Micellaire Hydratante 3‑en‑1",
+    "description": "Nettoie, démaquille et tonifie en un seul geste. Pour visage, yeux et lèvres.",
+    "fullDescription": "Formule 3‑en‑1 aux micelles nettoyantes et à la glycérine. Retire efficacement le maquillage tout en respectant l’équilibre de la peau. Convient aux peaux normales à sèches. Vegan.",
+    "ingredients": ["Micelles nettoyantes", "Glycérine", "Extrait de bleuet", "Panthénol"],
+    "skinType": ["Peaux normales", "Peaux sèches"],
+    "usage": "Imbiber un coton et passer sur le visage, les yeux et les lèvres. Sans rinçage."
+  },
+  "39": {
+    "name": "Balea Eau Micellaire Rose 3‑en‑1 – Sans Parfum",
+    "description": "Nettoie et démaquille en douceur. Sans parfum ni alcool. Pour peaux sèches et sensibles.",
+    "fullDescription": "Micelles + eau de rose pour enlever le maquillage du visage, des yeux et des lèvres. Calme et hydrate légèrement la peau. Vegan.",
+    "ingredients": ["Micelles nettoyantes", "Eau de rose", "Glycérine", "Panthénol"],
+    "skinType": ["Peaux sèches", "Peaux sensibles"],
+    "usage": "Appliquer sur un coton et passer sur le visage, les yeux et les lèvres. Sans rinçage."
+  },
+  "40": {
+    "name": "Balea Eau Micellaire Figue de Barbarie 3‑en‑1",
+    "description": "Nettoyage micellaire frais pour peaux mixtes et sensibles. Sans parfum et sans alcool.",
+    "fullDescription": "Élimine maquillage et impuretés tout en respectant la barrière cutanée. L’extrait de figue de barbarie aide à hydrater et à apaiser. Vegan.",
+    "ingredients": ["Micelles nettoyantes", "Extrait de figue de barbarie", "Glycérine", "Panthénol"],
+    "skinType": ["Peaux mixtes", "Peaux sensibles"],
+    "usage": "Imbiber un coton et passer sur le visage, les yeux et les lèvres. Sans rinçage."
+  },
+  "41": {
+    "name": "Balea Disques Démaquillants Yeux Micellaires – Sans Huile",
+    "description": "Pads micellaires pour les yeux, retirent le maquillage hydrosoluble. Sans parfum et sans huile.",
+    "fullDescription": "Idéal pour les yeux sensibles et porteurs de lentilles. Laisse une sensation fraîche sans film gras. Vegan.",
+    "ingredients": ["Micelles nettoyantes", "Aloé vera", "Glycérine", "Agents adoucissants"],
+    "skinType": ["Tous types de peau", "Yeux sensibles"],
+    "usage": "Poser un disque sur la paupière fermée, laisser agir quelques secondes puis essuyer délicatement. Répéter si nécessaire. Sans rinçage."
+  },
+  "42": {
+    "name": "Clearasil Tampons Nettoyants Pores",
+    "description": "Tampons imprégnés à l’acide salicylique pour désobstruer les pores et réduire les imperfections.",
+    "fullDescription": "Action rapide: peau visiblement plus nette en 4 h. Exfolient en douceur pour éliminer l’excès de sébum et les cellules mortes. Testé dermatologiquement.",
+    "ingredients": ["Acide salicylique (BHA)", "Agents exfoliants", "Glycérine", "Agents apaisants"],
+    "skinType": ["Peaux grasses", "Peaux à imperfections"],
+    "usage": "Passer délicatement un tampon sur le visage propre matin et/ou soir. Sans rinçage. Réduire la fréquence en cas de sécheresse ou d’irritation."
+  },
+  "43": {
+    "name": "Balea Maximum Protection Anti‑Transpirant 96 h",
+    "description": "Protection longue durée jusqu’à 96 h contre la transpiration et les odeurs. Sans alcool (éthanol).",
+    "fullDescription": "Formule cliniquement prouvée à base de sels d’aluminium pour une protection maximale tout en douceur. Idéal en cas de transpiration intense. Vegan.",
+    "ingredients": ["Sels d’aluminium", "Agents hydratants", "Glycérine", "Parfum"],
+    "skinType": ["Tous types de peau"],
+    "usage": "Appliquer une fine couche sur peau propre et sèche, de préférence le soir. Laisser sécher avant de s’habiller. Ne pas utiliser sur peau irritée."
+  }
+},
+"product": {
+  "notFound": "Produit non trouvé",
+  "reviews": "avis",
+  "addedToCart": "Ajouté au panier !",
+  "keyIngredients": "Ingrédients Clés",
+  "bestFor": "Idéal Pour",
+  "usage": "Mode d'Emploi",
+  "addToCart": "Ajouter au Panier",
+  "freeShipping": "✓ Livraison gratuite sur les commandes de plus de 100 $",
+  "returns": "✓ Retours sous 30 jours",
+  "crueltyFree": "✓ Ingrédients sans cruauté et végan",
+  "customerReviews": "Avis des Clients",
+  "review1": "J'adore absolument ce produit ! Ma peau n'a jamais été aussi belle.",
+  "review2": "Qualité premium, livraison rapide et résultats incroyables !",
+  "review3": "Excellent produit mais un peu cher. Cela vaut vraiment l'investissement.",
+  "youMayAlsoLike": "Vous Aimerez Peut-Être Aussi",
+  "orderWhatsApp": "Commander via WhatsApp",
+      "whatsappMessage": {
+        "greeting": "Bonjour ! Je suis intéressé(e) par la commande de :",
+        "product": "Produit",
+        "price": "Prix",
+        "quantity": "Quantité",
+        "total": "Total",
+        "productLink": "Lien du produit",
+        "closing": "Merci de m'aider à finaliser ma commande !"
+      }
+},
+"reviews": {
+  "title": "Avis des Clients",
+  "subtitle": "Découvrez ce que nos clients aiment dans nos produits",
+  "formTitle": "Partagez Votre Avis",
+  "formDescription": "Aidez les autres à découvrir des produits de qualité",
+  "selectProduct": "Sélectionner un Produit",
+  "yourName": "Votre Nom",
+  "namePlaceholder": "Jane Doe",
+  "rating": "Évaluation",
+  "yourReview": "Votre Avis",
+  "reviewPlaceholder": "Partagez votre expérience honnête...",
+  "submitBtn": "Soumettre l'Avis",
+  "submitting": "Soumission en cours...",
+  "noReviews": "Aucun avis pour le moment",
+  "noReviewsDesc": "Soyez le premier à partager votre expérience avec ce produit !",
+  "verified": "Achat Vérifié",
+  "noRating": "Aucun",
+  "review": "avis",
+  "reviews": "avis",
+  "seeAllReviews": "Voir tous les {{count}} avis",
+  "showLess": "Afficher Moins",
+  "errorFill": "Veuillez remplir tous les champs",
+  "successSubmit": "Merci ! Votre avis a été publié.",
+  "errorSubmit": "Erreur lors de la soumission. Veuillez réessayer.",
+  "errorLoad": "Erreur lors du chargement des avis"
+},
+"cart": {
+  "title": "Panier d'Achat",
+  "empty": "Votre panier est vide",
+  "continueShopping": "Continuer les Achats",
+  "orderSummary": "Résumé de la Commande",
+  "subtotal": "Sous-total",
+  "shipping": "Livraison",
+  "free": "Gratuit",
+  "tax": "Taxe",
+  "total": "Total",
+  "checkout": "Procéder au Paiement",
+  "remove": "Supprimer l'article"
+},
+"currency": "MAD" ,
+"checkout": {
+  "title": "Paiement",
+  "loading": "Chargement...",
+  "thankYou": "Merci !",
+  "confirmationMessage": "Votre commande a été reçue. Vous recevrez un email de confirmation sous peu.",
+  "returnHome": "Retour à l'accueil",
+  "shippingInfo": "Informations de livraison",
+  "firstName": "Prénom",
+  "lastName": "Nom",
+  "email": "Email",
+  "phone": "Téléphone",
+  "address": "Adresse",
+  "city": "Ville",
+  "region": "Région",
+  "postalCode": "Code postal",
+  "processing": "Traitement...",
+  "placeOrder": "Passer la commande",
+  "orderReview": "Résumé de la commande",
+  "qty": "Qté",
+  "subtotal": "Sous-total",
+  "shipping": "Livraison",
+  "free": "Gratuite",
+  "tax": "Taxe",
+  "total": "Total",
+  "errorSubmit": "Échec de l'envoi de la commande. Veuillez réessayer."
+},
+ "testimonials": {
+    "title": "Ce que disent nos clients",
+    "subtitle": "Des avis authentiques de nos clients satisfaits",
+    "verifiedCustomer": "Client Vérifié",
+    "customer1Name": "Sarah M.",
+    "customer1Text": "La qualité est incomparable ! J’achèterai encore.",
+    "customer2Name": "Emma L.",
+    "customer2Text": "Le meilleur investissement pour ma peau — du luxe au quotidien.",
+    "customer3Name": "Jessica K.",
+    "customer3Text": "L’emballage est magnifique et le produit est incroyable !"
+  },
+
+
+  "blog": {
+    "heroTitle": "Blog Beauté & Soins de la Peau",
+    "heroSubtitle": "Découvrez les avantages de nos produits premium et les conseils d'experts en soins de la peau",
+    "searchPlaceholder": "Rechercher des articles...",
+    "minRead": "min de lecture",
+    "readMore": "Lire Plus",
+    "noResults": "Aucun Article Trouvé",
+    "noResultsDesc": "Essayez d'ajuster votre recherche ou votre filtre pour trouver ce que vous cherchez",
+    "resetFilters": "Réinitialiser les Filtres",
+    
+    "categories": {
+      "all": "Tous les Articles",
+      "skincare": "Soins de la Peau",
+      "eyecare": "Soins des Yeux",
+      "organic": "Biologique",
+      "handcare": "Soins des Mains",
+      "bodycare": "Soins du Corps",
+      "cleansing": "Nettoyage"
+    },
+
+    "newsletter": {
+      "title": "Abonnez-vous à Notre Newsletter",
+      "subtitle": "Recevez les derniers conseils beauté et offres exclusives dans votre boîte mail",
+      "placeholder": "Entrez votre email",
+      "subscribe": "S'abonner"
+    },
+
+    "marigold-cream": {
+      "title": "Crème au Calendula : Solution Naturelle pour Peau Sèche",
+      "excerpt": "Découvrez comment l'extrait de calendula dans cette crème riche procure une hydratation intense et une protection pour la peau sèche. Les ingrédients naturels restaurent la barrière d'hydratation de votre peau."
+    },
+
+    "aloe-eye-care": {
+      "title": "Soin des Yeux à l'Aloe : Soulagement Apaisant pour Yeux Fatigués",
+      "excerpt": "Découvrez pourquoi l'Aloe Vera à 10% est parfait pour réduire les poches et les cernes. Cette formule douce est testée dermatologiquement et convient aux peaux sensibles du contour des yeux."
+    },
+
+    "bio-day-cream": {
+      "title": "Crème de Jour Bio : Hydratation Naturelle Pure",
+      "excerpt": "Explorez les bienfaits des 99% d'ingrédients naturels dans cette crème de jour bio certifiée. Fabriquée en France avec des prébiotiques et des ingrédients durables pour une peau saine et éclatante."
+    },
+
+    "urea-eye-cream": {
+      "title": "Crème Contour des Yeux à l'Urée : Hydratation Profonde pour Peau Délicate",
+      "excerpt": "Comprenez comment 10% d'Urée combinée au Panthénol hydrate en profondeur les peaux très sèches et sensibles. Formule vegan offrant une hydratation durable sans irritation."
+    },
+
+    "oriental-hand-cream": {
+      "title": "Crème Mains Fleur Orientale : Soin Luxueux des Mains",
+      "excerpt": "Découvrez le mélange exotique de fleurs orientales dans cette crème nourrissante. Contient 50% d'ingrédients naturels pour réparer et protéger les mains sèches avec un parfum délicat."
+    },
+
+    "chamomile-hand-balm": {
+      "title": "Baume Mains & Ongles à la Camomille : Soin Naturel Réparateur",
+      "excerpt": "Découvrez les propriétés apaisantes de l'extrait naturel de camomille. Cette formule à 60% naturelle apaise les mains stressées tout en renforçant les ongles pour un soin complet."
+    },
+
+    "deep-moisture-lotion": {
+      "title": "Lotion Corps Hydratation Profonde : Excellence Formule Norvégienne",
+      "excerpt": "Découvrez la Formule Norvégienne qui s'absorbe instantanément pour 48 heures d'hydratation. Cliniquement prouvée pour une hydratation profonde des peaux normales à très sèches."
+    }
+  },
+  "footer": {
+    "brandName": "Beauty Bernoussi",
+    "brandDescription": "Soins de la peau de luxe, maquillage et outils de beauté pour la femme exigeante. Découvrez l'élégance et la qualité dans chaque produit.",
+    "quickLinks": "Liens Rapides",
+    "home": "Accueil",
+    "shop": "Boutique",
+    "blog": "Blog",
+    "reviews": "Avis",
+    "contact": "Contact",
+    "email": "support@beautybernoussi.com",
+    "phone": "+212 702-446580",
+    "address": "Bernoussi, Casablanca",
+    "support": "Support",
+    "faq": "FAQ",
+    "shipping": "Info Livraison",
+    "returns": "Retours et Remboursements",
+    "legal": "Légal",
+    "privacy": "Politique de Confidentialité",
+    "terms": "Conditions d'Utilisation",
+    "copyright": "© 2025 Beauty Bernoussi. Tous droits réservés."
+  }
+}

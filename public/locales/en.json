@@ -1,0 +1,637 @@
+{
+  "nav": {
+    "home": "Home",
+    "shop": "Shop",
+    "reviews": "Reviews",
+    "cart": "Cart",
+    "checkout": "Checkout",
+    "blog": "Blog"
+  },
+  "hero": {
+    "tagline": "Luxury Beauty Redefined",
+    "title1": "Discover Your",
+    "title2": "Beauty",
+    "title3": "Bernoussi",
+    "description": "Experience the pinnacle of luxury skincare and beauty. Meticulously crafted with premium ingredients for the discerning woman.",
+    "btnExplore": "Explore Collection",
+    "btnLearn": "Learn More",
+    "stats1": "150+",
+    "stats1Text": "Premium Products",
+    "stats2": "50",
+    "stats2Text": "Happy Customers",
+    "stats3": "4.9★",
+    "stats3Text": "Average Rating"
+  },
+  "categories": {
+    "title": "Featured Categories",
+    "skincare": "Skincare",
+    "makeup": "Makeup",
+    "tools": "Tools",
+    "shopNow": "Shop Now"
+  },
+  "bestsellers": {
+    "badge": "Curated For You",
+    "title": "Best Sellers",
+    "description": "Discover our most coveted luxury essentials, beloved by thousands",
+    "view": "View",
+    "topRated": "Top Rated"
+  },
+  "story": {
+    "title": "Our Luxury Story",
+    "text1": "Beauty Bernoussi represents the pinnacle of luxury skincare and beauty. Each product is meticulously crafted with premium ingredients sourced from around the world. We believe beauty should be an indulgence—a moment of pure luxury in your daily routine.",
+    "text2": "Founded on the principle that exceptional beauty products deserve exceptional presentation, Beauty Bernoussi combines science, nature, and luxury in every bottle."
+  },
+  "natural": {
+    "badge": "Natural Beauty Formula",
+    "title1": "Pure Natural",
+    "title2": "Beauty Care",
+    "description": "Experience the transformative power of nature with our premium beauty collection. Each product is carefully formulated with botanical extracts and essential nutrients to enhance your natural radiance.",
+    "feature1": "Certified organic ingredients",
+    "feature2": "Dermatologically tested formula",
+    "feature3": "Cruelty-free & vegan friendly",
+    "feature4": "Visible results in 2 weeks",
+    "btnDiscover": "Discover More",
+    "btnView": "View Collection",
+    "badgeText": "100% Natural"
+  },
+  "arrivals": {
+    "title": "New Arrivals",
+    "badge": "New"
+  },
+  "newsletter": {
+    "title": "Join Our Circle",
+    "description": "Get exclusive access to new launches, beauty tips, and special offers. Become part of our luxury beauty community.",
+    "placeholder": "Enter your email",
+    "btnSubscribe": "Subscribe",
+    "thankYou": "Thank you for subscribing!",
+    "checkInbox": "Check your inbox for exclusive offers",
+    "secure": "100% Secure",
+    "noSpam": "No Spam Ever",
+    "unsubscribe": "Unsubscribe Anytime"
+  },
+  "shop": {
+  "title": "Discover Our Collection",
+  "subtitle": "Curated luxury beauty products for every skin type and preference",
+  "category": "Category",
+  "type": "Type",
+  "priceRange": "Price Range",
+  "products": "products",
+  "popularity": "Popularity",
+  "newest": "Newest",
+  "priceLow": "Price: Low to High",
+  "priceHigh": "Price: High to Low",
+  "noProducts": "No products found.",
+  "tryAdjusting": "Try adjusting your filters to see more results.",
+  "new": "New",
+  "view": "View",
+  "categories": {
+    "skincare": "Skincare",
+    "makeup": "Makeup",
+    "tools": "Tools"
+  },
+  "types": {
+    "Shampooings": "Shampoos",
+    "Crèmes de nuit": "Night Creams",
+    "Huiles végétales": "Oils",
+    "Protection chaleur": "Heat Protection",
+    "Foundations": "Foundations",
+    "Lipsticks": "Lipsticks",
+    "Brushes": "Brushes"
+  }
+},
+"products": {
+  "1": {
+    "name": "Balea Professional Shampoo Sensitive Scalp",
+    "description": "Gentle sulfate-free shampoo that soothes sensitive scalp and leaves hair soft and shiny.",
+    "fullDescription": "Formulated for scalp microbiome balance, this shampoo combines panthenol and white tea extract to calm irritations and hydrate gently. Ideal for sensitive or dry scalps. Fine lather, easy rinse, frequent use.",
+    "ingredients": ["Panthenol", "White tea extract", "Gentle plant-based surfactants", "Glycerin"],
+    "skinType": ["Sensitive scalp", "Dry hair"],
+    "usage": "Massage onto scalp and wet hair for 2-3 minutes then rinse. Repeat if necessary."
+  },
+  "2": {
+    "name": "Balea Professional Keratin Repair Shampoo",
+    "description": "Repairing sulfate-free shampoo with keratin and peptides. Strengthens fiber and helps reduce breakage.",
+    "fullDescription": "Thanks to its pro-strength technology, this shampoo nourishes hair fiber with keratin and peptides to fill weakened areas. Hair is more resistant, shiny and easy to style. Ideal for brittle and damaged hair.",
+    "ingredients": ["Keratin", "Peptides", "Panthenol", "Light conditioning agents"],
+    "skinType": ["Brittle hair", "Damaged hair"],
+    "usage": "Apply to wet hair, massage gently, rinse. For optimal results, follow with a repair treatment."
+  },
+  "3": {
+    "name": "Balea Professional Aqua Hyaluron Shampoo",
+    "description": "Hydrating sulfate-free shampoo with hyaluronic acid and aloe vera. Restores suppleness and shine.",
+    "fullDescription": "The formula infused with hyaluronic acid and aloe vera (juice up to 40%) attracts and retains moisture at the heart of the fiber. Dry and dehydrated hair regains comfort, softness and vitality. Airy lather, fresh scent.",
+    "ingredients": ["Hyaluronic acid", "Aloe vera", "Glycerin", "Gentle surfactants"],
+    "skinType": ["Dry hair", "Dehydrated hair"],
+    "usage": "Apply to scalp and wet hair, massage then rinse abundantly. Can be used daily."
+  },
+  "4": {
+    "name": "dmBio Virgin Coconut Oil 300ml",
+    "description": "100% virgin, organic coconut oil, cold-pressed. Unrefined and non-deodorized.",
+    "fullDescription": "Versatile, dmBio coconut oil is from organic farming. Its melting texture and natural aroma are suitable for cooking (low heat, baking) and beauty rituals (skin, hair). Vegan, 300ml jar.",
+    "ingredients": ["100% organic coconut oil"],
+    "skinType": ["All skin and hair types"],
+    "usage": "Warm slightly if necessary. For beauty: apply a small amount to skin or hair ends."
+  },
+  "5": {
+    "name": "Balea Night Cream Niacinamide 10%",
+    "description": "Fragrance-free night cream with 10% niacinamide and 5% grape seed oil. Smooths skin texture and supports night regeneration.",
+    "fullDescription": "This lightweight and fragrance-free formula combines 10% niacinamide to refine pore appearance and strengthen skin barrier, with 5% softening grape seed oil. Upon waking, skin appears clearer, supple and balanced.",
+    "ingredients": ["Niacinamide (10%)", "Grape seed oil (5%)", "Glycerin", "Panthenol"],
+    "skinType": ["All skin types, even sensitive", "Combination to oily skin"],
+    "usage": "Apply in the evening on clean skin after serum. Avoid immediate eye area. Use sunscreen in the morning."
+  },
+  "6": {
+    "name": "Balea Professional Oil Repair Intensive Shampoo",
+    "description": "Intensive repair sulfate-free shampoo with 3-oil complex and keratin. Nourishes very dry and damaged hair.",
+    "fullDescription": "The rich formula combines a complex of three plant oils and keratin to smooth hair surface, reduce breakage and restore shine. Ideal for extremely dry, treated or fragile hair.",
+    "ingredients": ["3-oil plant complex", "Keratin", "Glycerin", "Conditioning agents"],
+    "skinType": ["Very damaged hair", "Dry hair"],
+    "usage": "Apply to scalp and wet hair, massage gently then rinse. Complete with nourishing conditioner."
+  },
+  "7": {
+    "name": "Balea Thermal Protectant Spray 220°C",
+    "description": "Two-phase thermal protectant spray up to 220°C. Protects during styling and leaves hair soft and shiny.",
+    "fullDescription": "Its two-phase formula combines heat-protective polymers with care agents (panthenol, light oils) to limit damage from heat tools. Anti-frizz effect and soft feel without weighing down, vegan.",
+    "ingredients": ["Heat-protective polymers", "Panthenol", "Light oils", "Glycerin"],
+    "skinType": ["All hair types"],
+    "usage": "Shake to mix both phases. Spray evenly on wet or dry hair before blow-drying, straightening or curling. Do not rinse."
+  },
+  "8": {
+    "name": "alverde All‑in‑One Care Oil",
+    "description": "All‑in‑one care oil for face, body and hair. Nourishes, softens and leaves a satin finish. Certified natural, vegan.",
+    "fullDescription": "Minimalist formula rich in plant oils (sunflower, sweet almond, coconut) and vitamin E. Multi‑purpose: massage, body care, bath oil or for hair ends. Silicone‑ and microplastic‑free, naturally derived fragrance.",
+    "ingredients": ["Vegetable oils (sunflower, sweet almond, coconut)", "Vitamin E", "Naturally derived fragrance"],
+    "skinType": ["Dry skin", "Normal skin", "Dry hair"],
+    "usage": "Apply a few drops to slightly damp skin. For hair: 1–3 drops to the ends or as a pre‑shampoo oil bath."
+  },
+  "9": {
+    "name": "Balea Natural Beauty Care Oil",
+    "description": "Lightweight care oil for body and hair. Non‑greasy finish with a soft scent. Vegan.",
+    "fullDescription": "Blend of light oils to nourish and protect skin and lengths without weighing down. Ideal for a natural glow and for smoothing hair ends. Dermatologically tested.",
+    "ingredients": ["Seed oils (hemp/grape)", "Sweet almond oil", "Vitamin E", "Fragrance"],
+    "skinType": ["Normal to dry skin", "Dry hair"],
+    "usage": "Apply 2–3 drops to damp skin. For hair: distribute a small amount through lengths/ends. Do not rinse."
+  },
+  "10": {
+    "name": "alverde Hair Tonic Strength & Power",
+    "description": "Leave‑in scalp tonic. Refreshing, strengthening feel—ideal for fine, tired hair.",
+    "fullDescription": "Formulated with stimulating caffeine, plant extracts (rosemary, nettle) and panthenol to soothe the scalp. Helps energize roots without weighing hair down. Certified natural cosmetics, vegan.",
+    "ingredients": ["Caffeine", "Rosemary extract", "Nettle extract", "Panthenol", "Glycerin"],
+    "skinType": ["Normal scalp", "Fine hair", "Weakened hair"],
+    "usage": "Apply along partings to clean scalp, massage gently and do not rinse. Use daily or after each wash."
+  },
+  "11": {
+    "name": "Balea Moisturizing Day Cream SPF 15 (10% Aloe Vera)",
+    "description": "Light day cream with 10% aloe vera and Hydro‑Complex. SPF 15 protection. For normal to combination skin.",
+    "fullDescription": "Provides lasting hydration, helps strengthen the skin barrier and delivers everyday radiance. UV filters for daily protection (SPF 15). Vegan.",
+    "ingredients": ["Aloe vera (10%)", "Hydro‑Complex", "Glycerin", "UV filters SPF 15", "Vitamin E"],
+    "skinType": ["Normal skin", "Combination skin"],
+    "usage": "Apply every morning to clean face and neck. Reapply with prolonged sun exposure. Avoid the eye contour."
+  },
+  "12": {
+    "name": "alverde Strength & Power Shampoo",
+    "description": "Silicone‑free strengthening shampoo for fine, flat hair. Certified natural cosmetics.",
+    "fullDescription": "With caffeine and botanical extracts to energize the fiber and add volume without weighing hair down. Gentle cleansers, light foam, vegan.",
+    "ingredients": ["Caffeine", "Fortifying botanical extracts", "Wheat proteins", "Glycerin", "Mild surfactants"],
+    "skinType": ["Fine hair", "Flat hair", "All scalp types"],
+    "usage": "Massage onto wet scalp and lengths, leave on 1–2 minutes, then rinse."
+  },
+  "13": {
+    "name": "ISANA Lemon & Lime Shower Gel",
+    "description": "Refreshing shower gel with lemon & lime scent. Gently cleanses and leaves skin fresh.",
+    "fullDescription": "With a soft‑care complex and glycerin to help maintain moisture. Zesty citrus fragrance. Vegan.",
+    "ingredients": ["Mild cleansing agents", "Glycerin", "Citrus extract", "Fragrance"],
+    "skinType": ["All skin types"],
+    "usage": "Lather on wet skin and rinse. Avoid contact with eyes."
+  },
+  "14": {
+    "name": "Balea Almond Blossom & Magnolia Cream Shower",
+    "description": "Velvety cream shower with almond and magnolia scent. Gently cleanses and leaves skin soft.",
+    "fullDescription": "Creamy lather with humectants to help retain moisture. Skin‑friendly pH, vegan.",
+    "ingredients": ["Mild cleansing agents", "Glycerin", "Almond & magnolia fragrance", "Panthenol"],
+    "skinType": ["Dry skin", "Normal skin"],
+    "usage": "Apply to wet skin, massage and rinse. Suitable for daily use."
+  },
+  "15": {
+      "name": "Balea Scented Deodorant Pink Blossom",
+      "description": "Aluminum-free deodorant spray with a long-lasting floral fragrance. 24-hour protection.",
+      "fullDescription": "A delicate floral deodorant mist that refreshes all day without aluminum salts. Vegan.",
+      "ingredients": ["0% aluminum salts", "Floral fragrance", "Glycerin", "Deodorizing agents"],
+      "skinType": ["All skin types"],
+      "usage": "Shake well. Spray on clean underarms from 15 cm. Let dry before dressing."
+    },
+    "16": {
+      "name": "alverde Organic Mint & Bergamot Care Shower Gel",
+      "description": "Invigorating shower gel with organic mint and bergamot. Gently cleanses.",
+      "fullDescription": "Mild plant-based surfactants and glycerin help preserve moisture. Certified natural cosmetic, vegan.",
+      "ingredients": ["Organic mint extract", "Organic bergamot extract", "Glycerin", "Mild surfactants"],
+      "skinType": ["All skin types"],
+      "usage": "Lather on damp skin, then rinse thoroughly."
+    },
+    "17": {
+      "name": "Balea Beauty Collagen Retinol Serum",
+      "description": "Retinol serum with pro-collagen complex. Visibly smooths and firms.",
+      "fullDescription": "Helps support collagen production, reduces the appearance of wrinkles, and improves firmness. Introduce gradually in the evening and use sun protection the next day.",
+      "ingredients": ["Retinol/Retinyl", "Pro-collagen complex", "Hyaluronic acid", "Glycerin"],
+      "skinType": ["Normal skin", "Mature skin"],
+      "usage": "In the evening, apply 2–3 drops on clean skin 2–3 times/week, then increase. Avoid eye area. Use SPF in the morning."
+    },
+    "18": {
+      "name": "Balea Vitamin C Serum",
+      "description": "Brightening serum with vitamin C and antioxidant action.",
+      "fullDescription": "Stabilized vitamin C revives glow, evens skin tone, and protects from oxidative stress. Ideal in the morning with SPF.",
+      "ingredients": ["Stabilized vitamin C", "Hyaluronic acid", "Glycerin", "Antioxidants"],
+      "skinType": ["All skin types", "Dull skin", "Spots and uneven tone"],
+      "usage": "Apply 2–3 drops to clean face morning and/or evening, then moisturize. Use SPF in the morning."
+    },
+    "19": {
+      "name": "Balea Beauty Hyaluron Serum",
+      "description": "Hydrating serum with 7 forms of hyaluronic acid. Immediate plumping effect.",
+      "fullDescription": "Combines hyaluronic acids of different molecular weights to retain moisture, smooth fine lines, and plump skin. Suitable for everyone.",
+      "ingredients": ["Multi-weight hyaluronic acid", "Glycerin", "Panthenol"],
+      "skinType": ["All skin types", "Dehydrated skin"],
+      "usage": "Apply morning and evening on slightly damp skin, then seal with cream."
+    },
+    "20": {
+      "name": "Balea Niacinamide 10% + Zinc 1% Serum",
+      "description": "Refines skin texture, reduces pores and shine.",
+      "fullDescription": "Fragrance-free formula with niacinamide to strengthen the skin barrier and improve irregularities, and zinc to balance sebum.",
+      "ingredients": ["Niacinamide 10%", "Zinc PCA 1%", "Glycerin"],
+      "skinType": ["Combination to oily skin", "All skin types"],
+      "usage": "Apply morning and/or evening after cleansing and before cream. Patch test recommended."
+    },
+    "21": {
+      "name": "Mixa The Cream – Very Dry Skin",
+      "description": "Multi-purpose nourishing cream for very dry and sensitive skin.",
+      "fullDescription": "Rich in glycerin, plant oils, and shea butter for intense nourishment of face, body, and hands. Soothes instantly.",
+      "ingredients": ["Glycerin", "Plant oils", "Shea butter", "Allantoin"],
+      "skinType": ["Very dry skin", "Sensitive skin"],
+      "usage": "Apply generously to dry areas of face and body as often as needed."
+    },
+    "22": {
+      "name": "Balea Melkfett Calendula – Protective Balm",
+      "description": "Protective balm with calendula for dry and chapped skin.",
+      "fullDescription": "Vaseline-based formula creates a barrier film with calendula extract to soothe and reduce water loss. Ideal for hands, elbows, heels.",
+      "ingredients": ["Vaseline/Paraffin", "Calendula extract", "Protective waxes"],
+      "skinType": ["Dry skin", "Rough and chapped areas"],
+      "usage": "Apply a thin layer to affected areas as often as needed."
+    },
+    "23": {
+      "name": "Balea Energizing Eye Care (10% Aloe Vera)",
+      "description": "Fragrance-free eye care with caffeine, vitamin C, and Hydro-Complex. Reduces puffiness and dark circles.",
+      "fullDescription": "Light texture suitable for sensitive eye area. Provides instant freshness and lasting hydration.",
+      "ingredients": ["Aloe vera 10%", "Caffeine", "Vitamin C", "Hydro-Complex"],
+      "skinType": ["All skin types", "Tired eye area", "Sensitive skin"],
+      "usage": "Apply a small amount morning and evening by gently tapping around the eye area."
+    },
+    "24": {
+      "name": "Diadermine Essentiel BIO Moisturizing Day Cream",
+      "description": "Hydrating day cream enriched with natural prebiotics. 99% natural ingredients.",
+      "fullDescription": "Helps maintain skin microbiome balance and strengthen the protective barrier. Certified organic, made in France.",
+      "ingredients": ["Natural prebiotics", "Organic botanical extracts", "Glycerin"],
+      "skinType": ["Normal to dry skin", "Sensitive skin"],
+      "usage": "Apply every morning to cleansed face and neck."
+    },
+    "25": {
+      "name": "Balea Eye Cream Urea 10% (Fragrance-Free)",
+      "description": "Intense hydration and soothing care for very dry and sensitive eye area.",
+      "fullDescription": "Urea 10% combats dryness, panthenol soothes, and glycerin locks in moisture. Gentle, fragrance-free formula.",
+      "ingredients": ["Urea 10%", "Panthenol", "Glycerin"],
+      "skinType": ["Very dry skin", "Sensitive skin"],
+      "usage": "Apply a rice-sized amount and gently pat morning and evening."
+    },
+    "26": {
+      "name": "Balea Hand Cream Glamorous Moment",
+      "description": "Oriental-floral scented hand cream. Nourishes dry hands.",
+      "fullDescription": "Enriched with moisturizing agents and shea butter for soft, nourished hands. Vegan.",
+      "ingredients": ["Glycerin", "Shea butter", "Plant oils", "Oriental-floral fragrance"],
+      "skinType": ["Dry hands"],
+      "usage": "Massage onto hands and nails as often as needed, especially after washing."
+    },
+    "27": {
+      "name": "Balea Hand & Nail Balm Chamomile",
+      "description": "Soothing and protective care with chamomile extract and panthenol.",
+      "fullDescription": "Hydrates, reduces redness, and cares for cuticles. Light texture for frequent use.",
+      "ingredients": ["Chamomile extract", "Panthenol (Provitamin B5)", "Glycerin", "Allantoin"],
+      "skinType": ["Stressed hands", "Sensitive skin"],
+      "usage": "Apply regularly to hands and nails until fully absorbed."
+    },
+    "28": {
+      "name": "Neutrogena Body Lotion Deep Moisture – Immediate Absorption",
+      "description": "Intense hydration up to 48h with Norwegian Formula. Fast-absorbing.",
+      "fullDescription": "Nourishes dry skin and leaves it soft from the first use, without sticky feel.",
+      "ingredients": ["Norwegian Formula", "Glycerin", "Emollient agents"],
+      "skinType": ["Dry skin"],
+      "usage": "Apply daily all over the body, ideally after showering."
+    },
+    "29": {
+      "name": "Balea Deo-Bodyspray Coconut Cancun",
+      "description": "Aluminum-free body deodorant spray with coconut & peach scent. 24h freshness.",
+      "fullDescription": "Gentle deodorant formula without aluminum salts (ACH) to neutralize odors and leave a fruity coconut-peach veil. Vegan.",
+      "ingredients": ["0% aluminum salts (ACH)", "Deodorizing agents", "Glycerin", "Coconut & peach fragrance"],
+      "skinType": ["All skin types"],
+      "usage": "Spray on clean, dry underarms from 15 cm. Let dry. Do not use on irritated skin."
+    },
+    "30": {
+"name": "Neutrogena Deep Moisture Sensitive Body Lotion – Fragrance‑Free",
+"description": "Fragrance‑free body lotion for dry, sensitive skin. 48h hydration with Norwegian Formula.",
+"fullDescription": "High glycerin content for deep hydration and immediate comfort without a greasy film. Clinically tested on sensitive skin.",
+"ingredients": ["Norwegian Formula", "Glycerin", "Panthenol", "Emollients"],
+"skinType": ["Dry and sensitive skin"],
+"usage": "Apply daily over the whole body, ideally after showering. Reapply on very dry areas."
+},
+"31": {
+"name": "Balea Intimate After Shave Balm – Fragrance‑Free",
+"description": "Soothing balm for the intimate area; helps prevent shaving irritation. Perfume‑free.",
+"fullDescription": "With lactic acid to support the natural pH, aloe vera and peach blossom extract to calm and moisturize. Vegan.",
+"ingredients": ["Lactic acid", "Aloe vera", "Peach blossom extract", "Glycerin"],
+"skinType": ["Sensitive skin"],
+"usage": "Apply a thin layer to the external intimate area after shaving on clean, dry skin. Do not rinse."
+},
+"32": {
+"name": "Balea Vaseline – Pharma Grade, Fragrance‑Free",
+"description": "Pure petroleum jelly that protects, softens and repairs very dry areas.",
+"fullDescription": "Creates an occlusive barrier to lock in moisture. Ideal for lips, cuticles, elbows and heels. Fragrance‑free.",
+"ingredients": ["Petrolatum"],
+"skinType": ["Dry skin", "Sensitive skin"],
+"usage": "Apply a small amount to dry or chapped areas as needed. Do not apply to open wounds."
+},
+"33": {
+"name": "Balea 5in1 Protection Anti‑Transpirant Spray 48h",
+"description": "48h antiperspirant protection against sweat and odour. Helps reduce white and yellow stains. No ethanol.",
+"fullDescription": "5 benefits: long‑lasting freshness, odour control, anti white marks, anti yellow stains, gentle care for the skin. Vegan.",
+"ingredients": ["Aluminum salts (ACH)", "Anti‑stain agents", "Glycerin", "Light fragrance"],
+"skinType": ["All skin types"],
+"usage": "Shake well. Spray from 15 cm onto clean, dry underarms. Allow to dry before dressing. Do not use on irritated skin."
+},
+"34": {
+"name": "Balea Sweet Sunshine Deodorant Roll‑On 0% Aluminum",
+"description": "Aluminum‑free deodorant with a tropical fruit scent. 24h freshness.",
+"fullDescription": "Gentle formula that neutralizes odours without blocking perspiration. Pineapple & watermelon scent. Vegan.",
+"ingredients": ["0% aluminum salts (ACH)", "Deodorizing agents", "Glycerin", "Tropical fruit fragrance"],
+"skinType": ["All skin types"],
+"usage": "Apply to clean, dry underarms and let dry before dressing. Do not use on irritated skin."
+},
+"35": {
+    "name": "Balea Cleansing Oil with Argan – Fragrance‑Free",
+    "description": "Face cleansing oil that dissolves makeup (even waterproof) without drying. Fragrance‑free.",
+    "fullDescription": "Transforms into a milky emulsion on contact with water for easy rinse‑off. Enriched with nourishing argan oil to leave skin soft and comfortable. Ideal for dry skin. Vegan.",
+    "ingredients": ["Argan oil", "Gentle emollients", "Water‑soluble surfactants", "Vitamin E"],
+    "skinType": ["Dry skin", "Sensitive skin"],
+    "usage": "Massage 2–3 pumps onto dry skin (eyes included), add a little water to emulsify, then rinse. Use morning and/or evening."
+  },
+  "36": {
+    "name": "Balea Hydrating Toner with Aloe Vera",
+    "description": "Toner that cleans, clarifies and refreshes with Hydro‑Complex and aloe vera.",
+    "fullDescription": "Removes last traces after cleansing, re‑balances pH and preps skin for treatments. For normal and combination skin. Vegan.",
+    "ingredients": ["Aloe vera", "Glycerin", "Panthenol", "Hydro‑Complex"],
+    "skinType": ["Normal skin", "Combination skin"],
+    "usage": "Apply to a cotton pad and sweep over cleansed face. Do not rinse. Avoid direct contact with eyes."
+  },
+  "37": {
+    "name": "Balea Soothing Toner – Almond Blossom (Alcohol‑Free)",
+    "description": "Gentle alcohol‑free toner that cleanses and soothes. For dry and sensitive skin.",
+    "fullDescription": "With almond blossom extract and glycerin to comfort and soften skin. Removes limescale and cleanser residues. Vegan.",
+    "ingredients": ["Almond blossom extract", "Glycerin", "Panthenol", "Allantoin"],
+    "skinType": ["Dry skin", "Sensitive skin"],
+    "usage": "After cleansing, apply to a cotton pad and sweep over the face. Do not rinse. Use morning and evening."
+  },
+  "38": {
+    "name": "Cien Hydrating Micellar Water 3‑in‑1",
+    "description": "Cleanses, removes makeup and tones in one step. For face, eyes and lips.",
+    "fullDescription": "3‑in‑1 formula with cleansing micelles and glycerin. Effectively lifts makeup while respecting the skin’s balance. Suitable for normal to dry skin. Vegan.",
+    "ingredients": ["Cleansing micelles", "Glycerin", "Cornflower extract", "Panthenol"],
+    "skinType": ["Normal skin", "Dry skin"],
+    "usage": "Soak a cotton pad and wipe over face, eyes and lips. No rinse."
+  },
+  "39": {
+    "name": "Balea Rose Micellar Water 3‑in‑1 – Fragrance‑Free",
+    "description": "Gently cleanses and removes makeup. Fragrance‑ and alcohol‑free. For dry and sensitive skin.",
+    "fullDescription": "Micelles + rose water remove makeup from face, eyes and lips while calming and lightly hydrating. Vegan.",
+    "ingredients": ["Cleansing micelles", "Rose water", "Glycerin", "Panthenol"],
+    "skinType": ["Dry skin", "Sensitive skin"],
+    "usage": "Apply to a cotton pad and sweep over face, eyes and lips. No rinse."
+  },
+  "40": {
+    "name": "Balea Prickly Pear Micellar Water 3‑in‑1",
+    "description": "Fresh micellar cleansing for combination and sensitive skin. Fragrance‑ and alcohol‑free.",
+    "fullDescription": "Removes makeup and impurities while respecting the skin barrier. Prickly pear extract helps hydrate and soothe. Vegan.",
+    "ingredients": ["Cleansing micelles", "Prickly pear extract", "Glycerin", "Panthenol"],
+    "skinType": ["Combination skin", "Sensitive skin"],
+    "usage": "Soak a cotton pad and wipe over face, eyes and lips. No rinse."
+  },
+  "41": {
+    "name": "Balea Micellar Eye Make‑up Remover Pads – Oil‑Free",
+    "description": "Micellar pads for the eyes remove water‑soluble makeup. Fragrance‑free and oil‑free.",
+    "fullDescription": "Ideal for sensitive eyes and contact lens wearers. Leaves a fresh feel without oily residue. Vegan.",
+    "ingredients": ["Cleansing micelles", "Aloe vera", "Glycerin", "Soothing agents"],
+    "skinType": ["All skin types", "Sensitive eyes"],
+    "usage": "Place a pad on the closed eyelid for a few seconds, then wipe gently. Repeat if needed. No rinse."
+  },
+  "42": {
+    "name": "Clearasil Pore Cleansing Pads",
+    "description": "Pre‑soaked pads with salicylic acid to help unclog pores and reduce blemishes.",
+    "fullDescription": "Fast action: visibly clearer skin in 4 hours. Gently exfoliates to remove excess oil and dead skin cells. Dermatologically tested.",
+    "ingredients": ["Salicylic acid (BHA)", "Exfoliating agents", "Glycerin", "Soothing agents"],
+    "skinType": ["Oily skin", "Blemish‑prone skin"],
+    "usage": "Gently wipe a pad over clean skin morning and/or evening. Do not rinse. Reduce frequency if dryness or irritation occurs."
+  },
+  "43": {
+    "name": "Balea Maximum Protection Anti‑Perspirant 96h",
+    "description": "Very long‑lasting protection up to 96h against sweat and odour. No ethanol.",
+    "fullDescription": "Clinically proven formula with aluminum salts for maximum yet gentle protection. Ideal for heavy perspiration. Vegan.",
+    "ingredients": ["Aluminum salts", "Moisturizing agents", "Glycerin", "Fragrance"],
+    "skinType": ["All skin types"],
+    "usage": "Apply a thin layer to clean, dry underarms, preferably in the evening. Allow to dry before dressing. Do not use on irritated skin."
+  }
+},
+"product": {
+  "notFound": "Product not found",
+  "reviews": "reviews",
+  "addedToCart": "Added to cart!",
+  "keyIngredients": "Key Ingredients",
+  "bestFor": "Best For",
+  "usage": "Usage",
+  "addToCart": "Add to Cart",
+  "freeShipping": "✓ Free shipping on orders over $100",
+  "returns": "✓ 30-day returns",
+  "crueltyFree": "✓ Cruelty-free & vegan ingredients",
+  "customerReviews": "Customer Reviews",
+  "review1": "Absolutely love this product! My skin has never looked better.",
+  "review2": "Premium quality, fast shipping, and amazing results!",
+  "review3": "Great product but a bit pricey. Worth the investment though.",
+  "youMayAlsoLike": "You May Also Like",
+   "orderWhatsApp": "Order via WhatsApp",
+      "whatsappMessage": {
+        "greeting": "Hello! I'm interested in ordering:",
+        "product": "Product",
+        "price": "Price",
+        "quantity": "Quantity",
+        "total": "Total",
+        "productLink": "Product Link",
+        "closing": "Please help me complete my order. Thank you!"
+      }
+},
+"reviews": {
+  "title": "Customer Reviews",
+  "subtitle": "See what our customers love about our products",
+  "formTitle": "Share Your Review",
+  "formDescription": "Help others discover quality products",
+  "selectProduct": "Select Product",
+  "yourName": "Your Name",
+  "namePlaceholder": "Jane Doe",
+  "rating": "Rating",
+  "yourReview": "Your Review",
+  "reviewPlaceholder": "Share your honest experience...",
+  "submitBtn": "Submit Review",
+  "submitting": "Submitting...",
+  "noReviews": "No reviews yet",
+  "noReviewsDesc": "Be the first to share your experience with this product!",
+  "verified": "Verified Purchase",
+  "noRating": "No",
+  "review": "review",
+  "reviews": "reviews",
+  "seeAllReviews": "See All {{count}} Reviews",
+  "showLess": "Show Less",
+  "errorFill": "Please fill in all fields",
+  "successSubmit": "Thank you! Your review has been published.",
+  "errorSubmit": "Error submitting review. Please try again.",
+  "errorLoad": "Error loading reviews"
+},
+"cart": {
+  "title": "Shopping Cart",
+  "empty": "Your cart is empty",
+  "continueShopping": "Continue Shopping",
+  "orderSummary": "Order Summary",
+  "subtotal": "Subtotal",
+  "shipping": "Shipping",
+  "free": "Free",
+  "tax": "Tax",
+  "total": "Total",
+  "checkout": "Proceed to Checkout",
+  "remove": "Remove item"
+},
+"currency": "MAD" ,
+"checkout": {
+  "title": "Checkout",
+  "loading": "Loading...",
+  "thankYou": "Thank You!",
+  "confirmationMessage": "Your order has been received. You'll receive a confirmation email shortly.",
+  "returnHome": "Return Home",
+  "shippingInfo": "Shipping Information",
+  "firstName": "First Name",
+  "lastName": "Last Name",
+  "email": "Email",
+  "phone": "Phone",
+  "address": "Address",
+  "city": "City",
+  "region": "Region",
+  "postalCode": "Postal Code",
+  "processing": "Processing...",
+  "placeOrder": "Place Order",
+  "orderReview": "Order Review",
+  "qty": "Qty",
+  "subtotal": "Subtotal",
+  "shipping": "Shipping",
+  "free": "Free",
+  "tax": "Tax",
+  "total": "Total",
+  "errorSubmit": "Failed to submit order. Please try again."
+},
+"testimonials": {
+      "title": "Customer Love",
+      "subtitle": "Hear what our community has to say about their luxury experience",
+      "verifiedCustomer": "Verified Customer",
+      "customer1Name": "Sarah M.",
+      "customer1Text": "The quality is unmatched. I feel like a luxury hotel guest every time I use these products.",
+      "customer2Name": "Emma L.",
+      "customer2Text": "Best investment for my skincare routine. The results are visible within weeks.",
+      "customer3Name": "Jessica K.",
+      "customer3Text": "The packaging alone is worth it. Feels premium, performs premium."
+    },
+
+
+    "blog": {
+    "heroTitle": "Beauty & Skincare Blog",
+    "heroSubtitle": "Discover the benefits of our premium products and expert skincare tips",
+    "searchPlaceholder": "Search articles...",
+    "minRead": "min read",
+    "readMore": "Read More",
+    "noResults": "No Articles Found",
+    "noResultsDesc": "Try adjusting your search or filter to find what you're looking for",
+    "resetFilters": "Reset Filters",
+    
+    "categories": {
+      "all": "All Articles",
+      "skincare": "Skincare",
+      "eyecare": "Eye Care",
+      "organic": "Organic",
+      "handcare": "Hand Care",
+      "bodycare": "Body Care",
+      "cleansing": "Cleansing"
+    },
+
+    "newsletter": {
+      "title": "Subscribe to Our Newsletter",
+      "subtitle": "Get the latest beauty tips and exclusive offers delivered to your inbox",
+      "placeholder": "Enter your email",
+      "subscribe": "Subscribe"
+    },
+
+    "marigold-cream": {
+      "title": "Marigold Cream: Nature's Solution for Dry Skin",
+      "excerpt": "Discover how calendula extract in this rich cream provides intense hydration and protection for dry skin. Natural ingredients work together to restore your skin's moisture barrier."
+    },
+
+    "aloe-eye-care": {
+      "title": "Aloe Eye Care: Soothing Relief for Tired Eyes",
+      "excerpt": "Learn why 10% Aloe Vera is perfect for reducing puffiness and dark circles. This gentle formula is dermatologically tested and suitable for sensitive skin around the eyes."
+    },
+
+    "bio-day-cream": {
+      "title": "Organic Bio Day Cream: Pure Natural Hydration",
+      "excerpt": "Explore the benefits of 99% natural ingredients in this certified organic day cream. Made in France with prebiotics and sustainable ingredients for healthy, glowing skin."
+    },
+
+    "urea-eye-cream": {
+      "title": "Urea Eye Cream: Deep Moisture for Delicate Skin",
+      "excerpt": "Understand how 10% Urea combined with Panthenol works to deeply moisturize very dry and sensitive skin. Vegan formula provides long-lasting hydration without irritation."
+    },
+
+    "oriental-hand-cream": {
+      "title": "Oriental Blossom Hand Cream: Luxury Hand Care",
+      "excerpt": "Experience the exotic blend of oriental florals in this nourishing hand cream. Contains 50% natural ingredients to repair and protect dry hands with a delicate fragrance."
+    },
+
+    "chamomile-hand-balm": {
+      "title": "Chamomile Hand & Nail Balm: Natural Healing Care",
+      "excerpt": "Discover the calming properties of natural chamomile extract. This 60% natural formula soothes stressed hands while strengthening nails for complete hand care."
+    },
+
+    "deep-moisture-lotion": {
+      "title": "Deep Moisture Body Lotion: Norwegian Formula Excellence",
+      "excerpt": "Learn about the Norwegian Formula that absorbs instantly for 48-hour moisture. Clinically proven to provide deep hydration for normal to very dry skin."
+    }    
+   },
+   "footer": {
+    "brandName": "Beauty Bernoussi",
+    "brandDescription": "Luxury skincare, makeup, and beauty tools for the discerning woman. Experience elegance and quality in every product.",
+    "quickLinks": "Quick Links",
+    "home": "Home",
+    "shop": "Shop",
+    "blog": "Blog",
+    "reviews": "Reviews",
+    "contact": "Contact",
+    "email": "support@beautybernoussi.com",
+    "phone": "+212 702-446580",
+    "address": "Bernoussi, Casablanca",
+    "support": "Support",
+    "faq": "FAQ",
+    "shipping": "Shipping Info",
+    "returns": "Returns & Refunds",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "copyright": "© 2025 Beauty Bernoussi. All rights reserved."
+  }
+}
