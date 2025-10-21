@@ -8,6 +8,12 @@ import { useLanguage } from '@/app/context/LanguageContext';
 import Link from 'next/link';
 import Image from 'next/image';
 
+interface CartItem {
+  productId: string;
+  quantity: number;
+}
+
+
 export default function ProductPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = use(params);
   const { t, isRTL } = useLanguage();
@@ -33,7 +39,6 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
 
   // Get translated product information
   const translatedName = t(`products.${product.id}.name`);
-  const translatedDescription = t(`products.${product.id}.description`);
   const translatedFullDescription = t(`products.${product.id}.fullDescription`);
   const translatedIngredients = t(`products.${product.id}.ingredients`);
   const translatedSkinType = t(`products.${product.id}.skinType`);
@@ -48,20 +53,21 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
     ? translatedSkinType
     : product.skinType;
 
-  const handleAddToCart = () => {
-    const cart = JSON.parse(localStorage.getItem('beauty-cart') || '[]');
-    const existing = cart.find((item: any) => item.productId === product.id);
+ const handleAddToCart = () => {
+  const cart: CartItem[] = JSON.parse(localStorage.getItem('beauty-cart') || '[]');
+  const existing = cart.find((item) => item.productId === product.id);
 
-    if (existing) {
-      existing.quantity += quantity;
-    } else {
-      cart.push({ productId: product.id, quantity });
-    }
+  if (existing) {
+    existing.quantity += quantity;
+  } else {
+    cart.push({ productId: product.id, quantity });
+  }
 
-    localStorage.setItem('beauty-cart', JSON.stringify(cart));
-    window.dispatchEvent(new Event('cart-updated'));
-    alert(t('product.addedToCart') || 'Added to cart!');
-  };
+  localStorage.setItem('beauty-cart', JSON.stringify(cart));
+  window.dispatchEvent(new Event('cart-updated'));
+  alert(t('product.addedToCart') || 'Added to cart!');
+};
+
 
   const handleWhatsAppOrder = () => {
     const productUrl = window.location.href;
@@ -157,11 +163,12 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
                   <div>
                     <h3 className="font-semibold mb-3 text-gray-900">{t('product.keyIngredients') || 'Key Ingredients'}</h3>
                     <div className="flex flex-wrap gap-2">
-                      {ingredientsList.map((ing: any, index: number) => (
-                        <span key={index} className="bg-gradient-to-r from-gray-50 to-gray-100 px-4 py-2 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-gray-300 transition">
-                          {ing}
-                        </span>
-                      ))}
+                     {ingredientsList.map((ing: string, index: number) => (
+  <span key={index} className="bg-gradient-to-r from-gray-50 to-gray-100 px-4 py-2 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-gray-300 transition">
+    {ing}
+  </span>
+))}
+
                     </div>
                   </div>
                 )}
@@ -255,7 +262,8 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
                       <Star key={j} className={`w-4 h-4 ${j < review.rating ? 'fill-current' : 'text-gray-300'}`} />
                     ))}
                   </div>
-                  <p className="text-gray-600 mb-3 italic">"{review.text}"</p>
+                  <p className="text-gray-600 mb-3 italic">&quot;{review.text}&quot;</p>
+
                   {/* <p className="text-sm font-semibold text-gray-900">{review.author}</p> */}
                 </div>
               ))}

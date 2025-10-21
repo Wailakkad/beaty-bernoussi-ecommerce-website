@@ -7,23 +7,29 @@ import { PRODUCTS } from '@/data/products';
 import Image from 'next/image';
 import { useLanguage } from '@/app/context/LanguageContext';
 
+interface CartItem {
+  productId: string | number;
+  quantity: number;
+}
+
+interface CheckoutFormData {
+  firstName: string;
+  lastName: string;
+  email: string;
+  phone: string;
+  address: string;
+  city: string;
+  state: string;
+  zipCode: string;
+}
+
 export default function Checkout() {
   const { t, isRTL } = useLanguage();
-  const [cart, setCart] = useState<any[]>([]);
+  const [cart, setCart] = useState<CartItem[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string>('');
-  
-  // Helper function to get translated product name
-  const getTranslatedName = (productId: string | number, fallbackName: string): string => {
-    try {
-      const translated = t(`products.${productId}.name`);
-      return translated !== `products.${productId}.name` ? translated : fallbackName;
-    } catch {
-      return fallbackName;
-    }
-  };
-  
-  const [formData, setFormData] = useState({
+
+  const [formData, setFormData] = useState<CheckoutFormData>({
     firstName: '',
     lastName: '',
     email: '',
@@ -33,45 +39,47 @@ export default function Checkout() {
     state: '',
     zipCode: '',
   });
+
   const [submitted, setSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [orderId, setOrderId] = useState<number | null>(null);
 
-  // Load cart from localStorage on client side only
+  // Helper function
+  const getTranslatedName = (productId: string | number, fallbackName: string): string => {
+    try {
+      const translated = t(`products.${productId}.name`);
+      return translated !== `products.${productId}.name` ? translated : fallbackName;
+    } catch {
+      return fallbackName;
+    }
+  };
+
   useEffect(() => {
     const storedCart = localStorage.getItem('beauty-cart');
-    const parsedCart = JSON.parse(storedCart || '[]');
+    const parsedCart: CartItem[] = storedCart ? JSON.parse(storedCart) : [];
     setCart(parsedCart);
     setIsLoading(false);
-
-    // Check if cart is empty
-    if (parsedCart.length === 0) {
-      // Optionally redirect to shop or show empty cart message
-      console.log('Cart is empty');
-    }
   }, []);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
-    // Clear error when user starts typing
     if (error) setError('');
   };
 
-  const subtotal = cart.reduce((sum: number, item: any) => {
-    const product = PRODUCTS.find(p => p.id === item.productId);
-    return sum + (product?.price || 0) * item.quantity;
+  const subtotal = cart.reduce((sum, item) => {
+    const product = PRODUCTS.find((p) => p.id === item.productId);
+    return sum + ((product?.price ?? 0) * item.quantity);
   }, 0);
+
   const shipping = subtotal > 500 ? 0 : 50;
-  
   const total = subtotal + shipping;
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
     setError('');
 
-    // Validate cart is not empty
     if (cart.length === 0) {
       setError(t('checkout.emptyCart') || 'Your cart is empty');
       setIsSubmitting(false);
@@ -79,69 +87,43 @@ export default function Checkout() {
     }
 
     try {
-      // Prepare order data with product details
       const orderData = {
         customer: formData,
-        items: cart.map(item => ({
-          productId: item.productId,
-          quantity: item.quantity,
-        })),
+        items: cart,
         subtotal: parseFloat(subtotal.toFixed(2)),
         shipping: parseFloat(shipping.toFixed(2)),
-        
         total: parseFloat(total.toFixed(2)),
         timestamp: new Date().toISOString(),
       };
 
-      console.log('Submitting order:', orderData);
-
-      // Send to backend API
       const response = await fetch('/api/checkout', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(orderData),
       });
 
       const responseData = await response.json();
 
-      if (!response.ok) {
-        throw new Error(responseData.error || responseData.details || 'Failed to submit order');
-      }
+      if (!response.ok) throw new Error(responseData.error || 'Failed to submit order');
 
-      console.log('Order submitted successfully:', responseData);
-
-      // Store order ID
-      if (responseData.orderId) {
-        setOrderId(responseData.orderId);
-      }
-
-      // Clear cart
+      if (responseData.orderId) setOrderId(responseData.orderId);
       localStorage.setItem('beauty-cart', '[]');
       window.dispatchEvent(new Event('cart-updated'));
-      
       setSubmitted(true);
 
-      // Redirect to home after 3 seconds
       setTimeout(() => {
         window.location.href = '/';
       }, 3000);
-    } catch (error) {
-      console.error('Order submission error:', error);
-      
-      const errorMessage = error instanceof Error 
-        ? error.message 
-        : 'An unexpected error occurred';
-      
-      setError(errorMessage);
-      
-      // Show alert as backup
-      alert(t('checkout.errorSubmit') || errorMessage);
+    } catch (err: unknown) {
+      console.error('Order submission error:', err);
+      const message = err instanceof Error ? err.message : 'An unexpected error occurred';
+      setError(message);
+      alert(t('checkout.errorSubmit') || message);
     } finally {
       setIsSubmitting(false);
     }
   };
+
 
   if (isLoading) {
     return (

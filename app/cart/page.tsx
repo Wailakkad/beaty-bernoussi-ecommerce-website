@@ -7,10 +7,13 @@ import { PRODUCTS } from '@/data/products';
 import { Trash2 } from 'lucide-react';
 import { useLanguage } from '@/app/context/LanguageContext';
 import Image from 'next/image';
-
+type CartItem = {
+  productId: string;
+  quantity: number;
+};
 export default function Cart() {
-  const { t, isRTL } = useLanguage();
-  const [cartItems, setCartItems] = useState<any[]>([]);
+   const { t, isRTL } = useLanguage();
+  const [cartItems, setCartItems] = useState<CartItem[]>([]);
 
   useEffect(() => {
     const cart = JSON.parse(localStorage.getItem('beauty-cart') || '[]');

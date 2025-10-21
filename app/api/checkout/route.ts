@@ -58,7 +58,7 @@ const transporter: Transporter = nodemailer.createTransport({
 });
 
 // Verify transporter configuration
-transporter.verify(function (error: Error | null, success: boolean) {
+transporter.verify(function (error: Error | null) {
   if (error) {
     console.log('SMTP configuration error:', error);
   } else {
@@ -176,10 +176,7 @@ function generateStoreOwnerEmail(orderData: EnrichedOrderData): string {
               <td style="padding: 8px 0;">Shipping:</td>
               <td style="padding: 8px 0; text-align: right;">${shipping === 0 ? 'FREE' : shipping.toFixed(2) + ' MAD'}</td>
             </tr>
-            <tr>
-              <td style="padding: 8px 0;">Tax (8%):</td>
-              <td style="padding: 8px 0; text-align: right;">${tax.toFixed(2)} MAD</td>
-            </tr>
+           
             <tr style="border-top: 2px solid #d4af37; font-size: 18px; font-weight: bold;">
               <td style="padding: 15px 0 0 0; color: #d4af37;">TOTAL:</td>
               <td style="padding: 15px 0 0 0; text-align: right; color: #d4af37;">${total.toFixed(2)} MAD</td>
@@ -271,10 +268,7 @@ function generateCustomerEmail(orderData: EnrichedOrderData): string {
               <td style="padding: 8px 0;">Shipping:</td>
               <td style="padding: 8px 0; text-align: right;">${shipping === 0 ? 'FREE' : shipping.toFixed(2) + ' MAD'}</td>
             </tr>
-            <tr>
-              <td style="padding: 8px 0;">Tax (8%):</td>
-              <td style="padding: 8px 0; text-align: right;">${tax.toFixed(2)} MAD</td>
-            </tr>
+            
             <tr style="border-top: 2px solid #d4af37; font-size: 18px; font-weight: bold;">
               <td style="padding: 15px 0 0 0; color: #d4af37;">TOTAL:</td>
               <td style="padding: 15px 0 0 0; text-align: right; color: #d4af37;">${total.toFixed(2)} MAD</td>
@@ -331,7 +325,8 @@ export async function POST(request: Request) {
     // Enrich order data with product details
     // Convert any StaticImageData images to a string (using .src) so they match the local Product.image: string type
     const enrichedItems: EnrichedCartItem[] = orderData.items.map((item: CartItem) => {
-      const found = PRODUCTS.find((p: any) => p.id === item.productId);
+      const found = PRODUCTS.find(p => p.id === item.productId);
+
       const productForEmail: Product | undefined = found
         ? {
             id: found.id,

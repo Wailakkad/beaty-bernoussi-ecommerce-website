@@ -1,8 +1,19 @@
 // app/api/reviews/route.ts
 import { NextRequest, NextResponse } from 'next/server';
 
+// Define a type for a review
+type Review = {
+  id: string;
+  productId: string;
+  rating: number;
+  text: string;
+  author: string;
+  date: string;
+  verified: boolean;
+};
+
 // In-memory database (replace with real database later)
-let reviewsDatabase: any[] = [
+const reviewsDatabase: Review[] = [
   {
     id: '1',
     productId: 'product1',
@@ -53,32 +64,17 @@ let reviewsDatabase: any[] = [
 // GET - Fetch all reviews
 export async function GET(request: NextRequest) {
   try {
-    // Optional: filter by productId query parameter
     const searchParams = request.nextUrl.searchParams;
     const productId = searchParams.get('productId');
 
-    let filteredReviews = reviewsDatabase;
+    const filteredReviews = productId
+      ? reviewsDatabase.filter(r => r.productId === productId)
+      : reviewsDatabase;
 
-    if (productId) {
-      filteredReviews = reviewsDatabase.filter(r => r.productId === productId);
-    }
-
-    return NextResponse.json(
-      {
-        success: true,
-        data: filteredReviews,
-      },
-      { status: 200 }
-    );
+    return NextResponse.json({ success: true, data: filteredReviews }, { status: 200 });
   } catch (error) {
     console.error('Error fetching reviews:', error);
-    return NextResponse.json(
-      {
-        success: false,
-        message: 'Error fetching reviews',
-      },
-      { status: 500 }
-    );
+    return NextResponse.json({ success: false, message: 'Error fetching reviews' }, { status: 500 });
   }
 }
 
@@ -87,18 +83,14 @@ export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
 
-    // Validate required fields
     if (!body.author?.trim() || !body.text?.trim()) {
       return NextResponse.json(
-        {
-          success: false,
-          message: 'Author and review text are required',
-        },
+        { success: false, message: 'Author and review text are required' },
         { status: 400 }
       );
     }
 
-    const newReview = {
+    const newReview: Review = {
       id: Date.now().toString(),
       productId: body.productId,
       rating: body.rating || 5,
@@ -108,28 +100,16 @@ export async function POST(request: NextRequest) {
       verified: true,
     };
 
-    // Add to database
     reviewsDatabase.unshift(newReview);
 
     console.log('Review added:', newReview);
-    console.log('Total reviews:', reviewsDatabase.length);
 
     return NextResponse.json(
-      {
-        success: true,
-        message: 'Review created successfully',
-        data: newReview,
-      },
+      { success: true, message: 'Review created successfully', data: newReview },
       { status: 201 }
     );
   } catch (error) {
     console.error('Error creating review:', error);
-    return NextResponse.json(
-      {
-        success: false,
-        message: 'Error creating review',
-      },
-      { status: 500 }
-    );
+    return NextResponse.json({ success: false, message: 'Error creating review' }, { status: 500 });
   }
 }
