@@ -32,3 +32,22 @@ body {
   }
 }
 
+@supports (-webkit-touch-callout: none) {
+  /* Safari iOS fallback for dark gradients */
+  .ios-gradient-dark {
+    background: -webkit-linear-gradient(left, #111827, #1f2937) !important; /* gray-900 → gray-800 */
+  }
+
+  /* Safari iOS fallback for green WhatsApp button (optional reinclude here) */
+  .ios-gradient-green {
+    background: -webkit-linear-gradient(left, #22c55e, #16a34a) !important;
+  }
+}
+/* Fix gradient rendering on iOS Safari */
+.ios-gradient-fix {
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  transform: translateZ(0);
+}

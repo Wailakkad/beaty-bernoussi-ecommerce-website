@@ -329,10 +329,15 @@ useEffect(() => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
               
               <div className="space-y-8 animate-fade-in-left">
-                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-purple-100 to-pink-100 text-sm font-semibold text-gray-700 border border-purple-200/50">
+                <div className="absolute top-20 left-10 w-96 h-96 bg-gradient-to-br from-purple-200 to-pink-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 ios-gradient-fix"
+                       style={{ backgroundColor: '#f4e2ff' }} >
+                          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-purple-100 to-pink-100 text-sm font-semibold text-gray-700 border border-purple-200/50">
                   <Sparkles className="w-4 h-4 text-purple-500" />
                   <span>{t('natural.badge')}</span>
-                </div>
+                          </div>
+                  </div>
+
+                
 
                 <div className="space-y-4">
                   <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">

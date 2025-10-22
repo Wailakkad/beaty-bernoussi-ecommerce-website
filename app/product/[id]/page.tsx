@@ -205,13 +205,16 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
                     +
                   </button>
                 </div>
-                <button
-                  onClick={handleAddToCart}
-                  className="flex-1 bg-gradient-to-r from-gray-900 to-gray-800 text-white px-8 py-3 rounded-xl font-semibold flex items-center justify-center gap-2 hover:from-gray-800 hover:to-gray-700 transform hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 shadow-lg hover:shadow-xl"
-                >
-                  <ShoppingBag className="w-5 h-5" />
-                  {t('product.addToCart') || 'Add to Cart'}
-                </button>
+                <div className="flex-1 transition-transform hover:scale-[1.02] active:scale-[0.98]">
+  <button
+    onClick={handleAddToCart}
+    className="w-full ios-gradient-dark bg-gray-900 bg-gradient-to-r from-gray-900 to-gray-800 text-white px-8 py-3 rounded-xl font-semibold flex items-center justify-center gap-2 hover:from-gray-800 hover:to-gray-700 transition-all duration-200 shadow-lg hover:shadow-xl relative z-[999]"
+  >
+    <ShoppingBag className="w-5 h-5" />
+    {t('product.addToCart') || 'Add to Cart'}
+  </button>
+</div>
+
                 <button
                   onClick={() => setLiked(!liked)}
                   className={`px-6 py-3 rounded-xl border-2 transition-all duration-200 transform hover:scale-105 ${
