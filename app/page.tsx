@@ -500,7 +500,7 @@ useEffect(() => {
         </section>
 
         {/* New Arrivals */}
-        <section className="relative py-16 md:py-24 bg-gradient-to-b from-green-50/30 to-white overflow-hidden">
+        <section className="relative py-16 md:py-24 overflow-hidden" style={{ background: 'linear-gradient(to bottom, rgb(240 253 244 / 0.3), rgb(255 255 255))' }}>
           <div className="absolute top-20 left-10 w-64 h-64 bg-green-200 rounded-full mix-blend-multiply filter blur-3xl opacity-15 animate-pulse" style={{ animationDelay: '2s' }}></div>
 
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -511,8 +511,8 @@ useEffect(() => {
                 return (
                    <Link key={product.id} href={`/product/${product.id}`}>
                   <div className="product-card-hover bg-white rounded-2xl overflow-hidden border border-green-100/30 shadow-lg hover:shadow-2xl cursor-pointer transition-all duration-300 transform hover:-translate-y-2">
-                    <div className="relative h-98 bg-gradient-to-br from-pink-100 to-green-100 overflow-hidden group">
-                      <div className="absolute top-4 right-4 bg-gradient-to-r from-pink-400 to-red-400 text-white text-xs px-3 py-1 rounded-full font-semibold z-10">{t('arrivals.badge')}</div>
+                    <div className="relative h-98 overflow-hidden group" style={{ background: 'linear-gradient(to bottom right, rgb(252 231 243), rgb(220 252 231))' }}>
+                      <div className="absolute top-4 right-4 text-white text-xs px-3 py-1 rounded-full font-semibold z-10" style={{ background: 'linear-gradient(to right, rgb(244 114 182), rgb(248 113 113))' }}>{t('arrivals.badge')}</div>
                       <Image
                         src={product.image}
                         alt={product.name}
@@ -535,7 +535,7 @@ useEffect(() => {
 
         {/* Newsletter */}
         <section className="relative py-20 md:py-32 overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-pink-900/40 to-gray-900 animate-gradient"></div>
+          <div className="absolute inset-0 animate-gradient" style={{ background: 'linear-gradient(to bottom right, rgb(17 24 39), rgb(159 18 57 / 0.4), rgb(17 24 39))' }}></div>
           
           <div className="absolute top-10 right-20 w-96 h-96 bg-pink-500 rounded-full mix-blend-screen filter blur-3xl opacity-20 animate-float-slow"></div>
           <div className="absolute bottom-10 left-20 w-96 h-96 bg-amber-500 rounded-full mix-blend-screen filter blur-3xl opacity-20 animate-float-slow" style={{ animationDelay: '3s' }}></div>
@@ -550,10 +550,10 @@ useEffect(() => {
 
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="relative bg-white/10 backdrop-blur-2xl rounded-3xl p-10 md:p-16 border border-white/20 shadow-2xl overflow-hidden">
-              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-pink-400 via-amber-400 to-green-400 animate-shimmer"></div>
+              <div className="absolute top-0 left-0 w-full h-1 animate-shimmer" style={{ background: 'linear-gradient(to right, rgb(244 114 182), rgb(251 191 36), rgb(74 222 128))' }}></div>
 
               <div className="flex justify-center mb-6">
-                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-pink-400 to-rose-500 flex items-center justify-center text-3xl shadow-xl animate-float-slow">
+                <div className="w-16 h-16 rounded-full flex items-center justify-center text-3xl shadow-xl animate-float-slow" style={{ background: 'linear-gradient(to bottom right, rgb(244 114 182), rgb(244 63 94))' }}>
                   ✨
                 </div>
               </div>
@@ -582,23 +582,24 @@ useEffect(() => {
                         className="w-full px-6 py-4 rounded-xl text-gray-900 bg-white/95 backdrop-blur-sm focus:outline-none focus:ring-4 focus:ring-amber-400/50 transition-all duration-300 placeholder:text-gray-400 font-medium"
                         required
                       />
-                      <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-pink-400 to-amber-400 opacity-0 group-focus-within:opacity-20 blur-xl transition-opacity duration-300 -z-10"></div>
+                      <div className="absolute inset-0 rounded-xl opacity-0 group-focus-within:opacity-20 blur-xl transition-opacity duration-300 -z-10" style={{ background: 'linear-gradient(to right, rgb(244 114 182), rgb(251 191 36))' }}></div>
                     </div>
                     <button
                       type="submit"
-                      className="relative px-8 py-4 bg-gradient-to-r from-amber-400 via-yellow-400 to-amber-500 text-gray-900 rounded-xl font-bold transition-all duration-300 hover:scale-105 hover:shadow-2xl overflow-hidden group"
+                      className="relative px-8 py-4 text-gray-900 rounded-xl font-bold transition-all duration-300 hover:scale-105 hover:shadow-2xl overflow-hidden group"
+                      style={{ background: 'linear-gradient(to right, rgb(251 191 36), rgb(250 204 21), rgb(251 191 36))' }}
                     >
                       <span className="relative z-10 flex items-center justify-center gap-2">
                         {t('newsletter.btnSubscribe')}
                         <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                       </span>
-                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -skew-x-12 translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-1000"></div>
+                      <div className="absolute inset-0 -skew-x-12 translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-1000" style={{ background: 'linear-gradient(to right, transparent, rgb(255 255 255 / 0.3), transparent)' }}></div>
                       <div className="absolute inset-0 rounded-xl bg-amber-300 animate-pulse-slow opacity-0 group-hover:opacity-20"></div>
                     </button>
                   </form>
                 ) : (
                   <div className="animate-fade-in-scale text-center py-6">
-                    <div className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-green-400 to-emerald-500 rounded-xl shadow-xl">
+                    <div className="inline-flex items-center gap-3 px-8 py-4 rounded-xl shadow-xl" style={{ background: 'linear-gradient(to right, rgb(74 222 128), rgb(16 185 129))' }}>
                       <div className="w-6 h-6 rounded-full bg-white flex items-center justify-center animate-bounce">
                         <svg className="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
@@ -637,9 +638,9 @@ useEffect(() => {
         </section>
 
         {/* Testimonials */}
-        <section className="relative py-20 md:py-32 bg-gradient-to-b from-white via-green-50/20 to-pink-50/20 overflow-hidden">
-          <div className="absolute top-20 left-1/4 w-96 h-96 bg-gradient-to-br from-green-200 to-emerald-200 rounded-full mix-blend-multiply filter blur-3xl opacity-15 animate-float-slow"></div>
-          <div className="absolute bottom-20 right-1/4 w-80 h-80 bg-gradient-to-br from-pink-200 to-rose-200 rounded-full mix-blend-multiply filter blur-3xl opacity-15 animate-float-slow" style={{ animationDelay: '2s' }}></div>
+        <section className="relative py-20 md:py-32 overflow-hidden" style={{ background: 'linear-gradient(to bottom, rgb(255 255 255), rgb(240 253 244 / 0.2), rgb(254 242 242 / 0.2))' }}>
+          <div className="absolute top-20 left-1/4 w-96 h-96 rounded-full mix-blend-multiply filter blur-3xl opacity-15 animate-float-slow" style={{ background: 'linear-gradient(to bottom right, rgb(187 247 208), rgb(167 243 208))' }}></div>
+          <div className="absolute bottom-20 right-1/4 w-80 h-80 rounded-full mix-blend-multiply filter blur-3xl opacity-15 animate-float-slow" style={{ animationDelay: '2s', background: 'linear-gradient(to bottom right, rgb(251 207 232), rgb(253 164 175))' }}></div>
 
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="text-center mb-16 animate-fade-in-up">
@@ -664,13 +665,13 @@ useEffect(() => {
                     >
                       <div className="max-w-3xl mx-auto">
                         <div className="relative bg-white/60 backdrop-blur-xl rounded-3xl p-10 md:p-14 border border-white/50 shadow-2xl overflow-hidden">
-                          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-pink-400 via-rose-400 to-green-400"></div>
+                          <div className="absolute top-0 left-0 w-full h-1" style={{ background: 'linear-gradient(to right, rgb(244 114 182), rgb(251 113 133), rgb(74 222 128))' }}></div>
                           
-                          <div className="absolute -top-6 -right-6 w-32 h-32 bg-gradient-to-br from-pink-200 to-rose-200 rounded-full opacity-20 blur-2xl"></div>
-                          <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-gradient-to-br from-green-200 to-emerald-200 rounded-full opacity-20 blur-2xl"></div>
+                          <div className="absolute -top-6 -right-6 w-32 h-32 rounded-full opacity-20 blur-2xl" style={{ background: 'linear-gradient(to bottom right, rgb(251 207 232), rgb(253 164 175))' }}></div>
+                          <div className="absolute -bottom-6 -left-6 w-32 h-32 rounded-full opacity-20 blur-2xl" style={{ background: 'linear-gradient(to bottom right, rgb(187 247 208), rgb(167 243 208))' }}></div>
 
                           <div className="flex justify-center mb-6">
-                            <div className="w-20 h-20 rounded-full bg-gradient-to-br from-pink-300 to-rose-300 flex items-center justify-center text-4xl shadow-lg animate-float-slow">
+                            <div className="w-20 h-20 rounded-full flex items-center justify-center text-4xl shadow-lg animate-float-slow" style={{ background: 'linear-gradient(to bottom right, rgb(249 168 212), rgb(253 164 175))' }}>
                               {testimonial.avatar}
                             </div>
                           </div>
@@ -713,9 +714,10 @@ useEffect(() => {
                     onClick={() => setActiveTestimonial(index)}
                     className={`transition-all duration-500 rounded-full ${
                       index === activeTestimonial
-                        ? 'w-12 h-3 bg-gradient-to-r from-pink-500 to-rose-500'
+                        ? 'w-12 h-3'
                         : 'w-3 h-3 bg-gray-300 hover:bg-gray-400'
                     }`}
+                    style={index === activeTestimonial ? { background: 'linear-gradient(to right, rgb(236 72 153), rgb(244 63 94))' } : {}}
                     aria-label={`Go to testimonial ${index + 1}`}
                   />
                 ))}

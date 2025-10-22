@@ -53,9 +53,9 @@ export default function Shop() {
   return (
     <>
       <Header />
-      <main className="min-h-screen bg-gradient-to-b from-white via-pink-50/10 to-green-50/10" dir={isRTL ? 'rtl' : 'ltr'}>
+      <main className="min-h-screen" style={{ background: 'linear-gradient(to bottom, rgb(255 255 255), rgb(253 242 248 / 0.1), rgb(240 253 244 / 0.1))' }} dir={isRTL ? 'rtl' : 'ltr'}>
         {/* Hero Section */}
-        <section className="relative bg-gradient-to-r from-pink-50/50 via-white to-green-50/50 py-12 overflow-hidden">
+        <section className="relative py-12 overflow-hidden" style={{ background: 'linear-gradient(to right, rgb(253 242 248 / 0.5), rgb(255 255 255), rgb(240 253 244 / 0.5))' }}>
           <div className="absolute top-10 left-20 w-48 h-48 bg-pink-200 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-pulse"></div>
           <div className="absolute bottom-10 right-20 w-48 h-48 bg-green-200 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-pulse" style={{ animationDelay: '2s' }}></div>
 
@@ -135,7 +135,7 @@ export default function Shop() {
               {/* Toolbar */}
               <div className="mb-8 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 bg-white/60 backdrop-blur-sm rounded-2xl p-6 border border-gray-100/50 shadow-lg">
                 <div className="flex items-center gap-2">
-                  <div className="w-3 h-3 rounded-full bg-gradient-to-r from-pink-400 to-green-400"></div>
+                  <div className="w-3 h-3 rounded-full" style={{ background: 'linear-gradient(to right, rgb(244 114 182), rgb(74 222 128))' }}></div>
                   <p className="text-gray-700 font-semibold">
                     {filteredProducts.length} <span className="text-gray-600">{t('shop.products')}</span>
                   </p>
@@ -167,9 +167,9 @@ export default function Shop() {
                     return (
                       <Link key={product.id} href={`/product/${product.id}`}>
                         <div className="group bg-white/70 backdrop-blur-sm rounded-2xl overflow-hidden border border-pink-100/30 shadow-lg hover:shadow-2xl cursor-pointer h-full flex flex-col transition-all duration-300 hover:-translate-y-2 hover:bg-white/90">
-                          <div className="relative h-96 bg-gradient-to-br from-pink-100 to-green-100 overflow-hidden">
+                          <div className="relative h-96 overflow-hidden" style={{ background: 'linear-gradient(to bottom right, rgb(252 231 243), rgb(220 252 231))' }}>
                             {product.new && (
-                              <div className="absolute top-4 right-4 bg-gradient-to-r from-pink-400 to-red-400 text-white text-xs px-3 py-1 rounded-full z-10 font-semibold shadow-lg">
+                              <div className="absolute top-4 right-4 text-white text-xs px-3 py-1 rounded-full z-10 font-semibold shadow-lg" style={{ background: 'linear-gradient(to right, rgb(244 114 182), rgb(248 113 113))' }}>
                                 {t('shop.new')}
                               </div>
                             )}
@@ -204,7 +204,7 @@ export default function Shop() {
                             </div>
                             <div className="flex justify-between items-center pt-4 border-t border-pink-100/30">
                               <span className="text-2xl font-bold luxury-gold">{t('currency')}{product.price}</span>
-                              <button className="bg-gradient-to-r from-pink-300 to-green-300 text-gray-900 px-4 py-2 rounded-lg hover:shadow-lg transition-all text-sm font-semibold group-hover:scale-105">
+                              <button className="text-gray-900 px-4 py-2 rounded-lg hover:shadow-lg transition-all text-sm font-semibold group-hover:scale-105" style={{ background: 'linear-gradient(to right, rgb(249 168 212), rgb(187 247 208))' }}>
                                 {t('shop.view')}
                               </button>
                             </div>

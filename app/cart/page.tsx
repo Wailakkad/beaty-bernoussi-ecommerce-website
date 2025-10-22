@@ -147,12 +147,15 @@ export default function Cart() {
                 </div>
 
                 {/* Improved button styling */}
-                <Link
-                  href="/checkout"
-                  className="block w-full text-center px-6 py-3 rounded-lg bg-gradient-to-r from-black to-gray-800 text-white font-semibold hover:from-gray-800 hover:to-black transition-all duration-300 shadow-md hover:shadow-xl"
-                >
-                  {t('cart.checkout')}
-                </Link>
+               <Link
+  href="/checkout"
+  className="block w-full text-center px-6 py-3 rounded-lg text-white font-semibold transition-all duration-300 shadow-md hover:shadow-xl"
+  style={{ background: 'linear-gradient(to right, rgb(0 0 0), rgb(31 41 55))' }}
+  onMouseEnter={(e) => e.currentTarget.style.background = 'linear-gradient(to right, rgb(31 41 55), rgb(0 0 0))'}
+  onMouseLeave={(e) => e.currentTarget.style.background = 'linear-gradient(to right, rgb(0 0 0), rgb(31 41 55))'}
+>
+  {t('cart.checkout')}
+</Link>
                 <Link
                   href="/shop"
                   className="block w-full text-center mt-3 px-6 py-3 rounded-lg border border-gray-800 text-gray-800 font-semibold hover:bg-gray-800 hover:text-white transition-all duration-300 shadow-sm hover:shadow-md"
