@@ -58,10 +58,11 @@ useEffect(() => {
       <Header />
       <main dir={isRTL ? 'rtl' : 'ltr'}>
         {/* Hero Section */}
+        {/* Hero Section */}
         <section className="relative min-h-screen bg-gradient-to-br from-white via-pink-50 to-green-50 overflow-hidden flex items-center">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-pink-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
-          <div className="absolute bottom-20 right-10 w-72 h-72 bg-green-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" style={{ animationDelay: '2s' }}></div>
-          <div className="absolute top-1/2 right-1/3 w-96 h-96 bg-yellow-100 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-pulse" style={{ animationDelay: '4s' }}></div>
+          <div className="absolute top-20 left-10 w-72 h-72 bg-pink-200 rounded-full filter blur-3xl opacity-20 animate-pulse"></div>
+          <div className="absolute bottom-20 right-10 w-72 h-72 bg-green-200 rounded-full filter blur-3xl opacity-20 animate-pulse" style={{ animationDelay: '2s' }}></div>
+          <div className="absolute top-1/2 right-1/3 w-96 h-96 bg-yellow-100 rounded-full filter blur-3xl opacity-10 animate-pulse" style={{ animationDelay: '4s' }}></div>
 
           <div className="absolute top-32 right-20 w-20 h-20 bg-pink-300 rounded-full opacity-20 animate-bounce" style={{ animationDuration: '3s' }}></div>
           <div className="absolute bottom-32 left-20 w-16 h-16 bg-green-300 rounded-full opacity-15 animate-bounce" style={{ animationDuration: '4s', animationDelay: '1s' }}></div>
@@ -86,9 +87,15 @@ useEffect(() => {
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                  {/* FIXED: Hero CTA Button */}
                   <Link
                     href="/shop"
                     className="inline-flex items-center justify-center btn-primary px-8 py-4 text-lg font-semibold transition-all hover:scale-105"
+                    style={{
+                      background: 'linear-gradient(to right, #ec4899, #f43f5e)',
+                      color: 'white',
+                      borderRadius: '0.5rem'
+                    }}
                   >
                     {t('hero.btnExplore')}
                     <ArrowRight className="w-5 h-5 ml-2" />
@@ -118,17 +125,30 @@ useEffect(() => {
 
               <div className="relative h-96 lg:h-full min-h-96 flex items-center justify-center">
                 <div className="relative w-full h-full max-w-md mx-auto">
-                  <div className="absolute inset-0 bg-white rounded-2xl shadow-2xl overflow-hidden backdrop-blur-sm border border-white/50 animate-float">
+                  <div className="absolute inset-0 bg-white rounded-2xl shadow-2xl overflow-hidden border border-white/50 animate-float">
                     <Image
                       src={imageHero}
                       alt="Beauty Products"
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-gradient-to-br from-green-300 to-green-100 rounded-full shadow-lg opacity-70 animate-float" style={{ animationDelay: '2s' }}>
+                  {/* FIXED: Floating badges */}
+                  <div 
+                    className="absolute -bottom-8 -left-8 w-32 h-32 rounded-full shadow-lg opacity-70 animate-float" 
+                    style={{ 
+                      background: 'linear-gradient(to bottom right, #86efac, #bbf7d0)',
+                      animationDelay: '2s' 
+                    }}
+                  >
                     <div className="w-full h-full flex items-center justify-center text-3xl">🌿</div>
                   </div>
-                  <div className="absolute top-1/2 -right-16 w-24 h-24 bg-gradient-to-br from-yellow-200 to-yellow-100 rounded-xl shadow-lg opacity-60 animate-float" style={{ animationDelay: '1.5s' }}>
+                  <div 
+                    className="absolute top-1/2 -right-16 w-24 h-24 rounded-xl shadow-lg opacity-60 animate-float" 
+                    style={{ 
+                      background: 'linear-gradient(to bottom right, #fef08a, #fef9c3)',
+                      animationDelay: '1.5s' 
+                    }}
+                  >
                     <div className="w-full h-full flex items-center justify-center text-2xl">💎</div>
                   </div>
                 </div>
@@ -139,8 +159,8 @@ useEffect(() => {
 
         {/* Featured Categories */}
         <section className="relative py-16 md:py-24 bg-gradient-to-b from-white via-pink-50/30 to-green-50/30 overflow-hidden">
-          <div className="absolute top-10 left-20 w-48 h-48 bg-pink-200 rounded-full mix-blend-multiply filter blur-3xl opacity-15 animate-pulse"></div>
-          <div className="absolute bottom-10 right-20 w-56 h-56 bg-green-200 rounded-full mix-blend-multiply filter blur-3xl opacity-15 animate-pulse" style={{ animationDelay: '2s' }}></div>
+          <div className="absolute top-10 left-20 w-48 h-48 bg-pink-200 rounded-full filter blur-3xl opacity-15 animate-pulse"></div>
+          <div className="absolute bottom-10 right-20 w-56 h-56 bg-green-200 rounded-full filter blur-3xl opacity-15 animate-pulse" style={{ animationDelay: '2s' }}></div>
 
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <h3 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">{t('categories.title')}</h3>
@@ -175,134 +195,153 @@ useEffect(() => {
           </div>
         </section>
 
-        {/* Best Sellers */}
-        <section className="relative py-20 md:py-32 bg-gradient-to-b from-white via-pink-50/10 to-white overflow-hidden">
-          <div className="absolute top-20 right-10 w-96 h-96 bg-gradient-to-br from-pink-200 to-rose-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float-slow"></div>
-          <div className="absolute bottom-20 left-10 w-80 h-80 bg-gradient-to-br from-amber-100 to-yellow-200 rounded-full mix-blend-multiply filter blur-3xl opacity-15 animate-float-slow" style={{ animationDelay: '3s' }}></div>
-          
-          <div className="absolute top-40 left-1/4 text-pink-300/30 animate-pulse" style={{ animationDuration: '3s' }}>
-            <Sparkles className="w-8 h-8" />
-          </div>
-          <div className="absolute bottom-40 right-1/4 text-amber-300/30 animate-pulse" style={{ animationDuration: '4s', animationDelay: '1s' }}>
-            <Sparkles className="w-6 h-6" />
-          </div>
+      {/* Best Sellers */}
+<section className="relative py-20 md:py-32 bg-gradient-to-b from-white via-pink-50/10 to-white overflow-hidden">
+  <div className="absolute top-20 right-10 w-96 h-96 bg-pink-200 rounded-full filter blur-3xl opacity-20 animate-float-slow"></div>
+  <div className="absolute bottom-20 left-10 w-80 h-80 bg-amber-100 rounded-full filter blur-3xl opacity-15 animate-float-slow" style={{ animationDelay: '3s' }}></div>
+  
+  <div className="absolute top-40 left-1/4 text-pink-300/30 animate-pulse" style={{ animationDuration: '3s' }}>
+    <Sparkles className="w-8 h-8" />
+  </div>
+  <div className="absolute bottom-40 right-1/4 text-amber-300/30 animate-pulse" style={{ animationDuration: '4s', animationDelay: '1s' }}>
+    <Sparkles className="w-6 h-6" />
+  </div>
 
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div className="text-center mb-16 animate-fade-in-up">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-pink-100 to-amber-100 text-sm font-semibold text-gray-700 mb-4">
-                <Sparkles className="w-4 h-4" />
-                {t('bestsellers.badge')}
-              </div>
-              <h3 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                {t('bestsellers.title')}
-              </h3>
-              <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-                {t('bestsellers.description')}
-              </p>
-            </div>
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div className="text-center mb-16 animate-fade-in-up">
+      {/* FIXED: Badge */}
+      <div 
+        className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold text-gray-700 mb-4"
+        style={{ background: 'linear-gradient(to right, #fce7f3, #fef3c7)' }}
+      >
+        <Sparkles className="w-4 h-4" />
+        {t('bestsellers.badge')}
+      </div>
+      <h3 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+        {t('bestsellers.title')}
+      </h3>
+      <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+        {t('bestsellers.description')}
+      </p>
+    </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-              {featured.map((product, index) => {
-                const translatedName = getTranslatedName(Number(product.id), product.name)
-                return (
-                   <div 
-                  key={product.id} 
-                  className="group relative animate-fade-in-up"
-                  style={{ animationDelay: `${index * 150}ms` }}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      {featured.map((product, index) => {
+        const translatedName = getTranslatedName(Number(product.id), product.name)
+        return (
+          <div 
+            key={product.id} 
+            className="group relative animate-fade-in-up"
+            style={{ animationDelay: `${index * 150}ms` }}
+          >
+            <div className="relative bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-xl hover:shadow-2xl transition-all duration-700 transform hover:-translate-y-3">
+              
+              <div className="absolute inset-0 bg-gradient-to-br from-pink-50/40 via-transparent to-amber-50/40 pointer-events-none"></div>
+              
+              {/* FIXED: Top Rated Badge */}
+              <div className="absolute top-4 left-4 z-20 flex gap-2">
+                <span 
+                  className="px-3 py-1 text-white text-xs font-bold rounded-full shadow-lg flex items-center gap-1"
+                  style={{ background: 'linear-gradient(to right, #ec4899, #f43f5e)' }}
                 >
-                  <div className="relative bg-white/80 backdrop-blur-xl rounded-3xl overflow-hidden border border-white/50 shadow-xl hover:shadow-2xl transition-all duration-700 transform hover:-translate-y-3">
-                    
-                    <div className="absolute top-4 left-4 z-20 flex gap-2">
-                      <span className="px-3 py-1 bg-gradient-to-r from-pink-500 to-rose-500 text-white text-xs font-bold rounded-full shadow-lg flex items-center gap-1">
-                        <Star className="w-3 h-3 fill-current" />
-                        {t('bestsellers.topRated')}
-                      </span>
-                    </div>
+                  <Star className="w-3 h-3 fill-current" />
+                  {t('bestsellers.topRated')}
+                </span>
+              </div>
 
-                    <div className="relative h-80 bg-gradient-to-br from-pink-50 via-white to-amber-50 overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                      
-                      <Image
-                        src={product.image}
-                        alt={product.name}
-                        width={400}
-                        height={400}
-                        className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 group-hover:rotate-2"
-                      />
-
-                      <div className="absolute inset-0 flex items-center justify-center gap-3 opacity-0 group-hover:opacity-100 transition-all duration-500">
-                        <Link 
-                          href={`/product/${product.id}`}
-                          className="p-3 bg-white/95 backdrop-blur-sm rounded-full shadow-lg hover:bg-white hover:scale-110 transition-all duration-300"
-                        >
-                          <Eye className="w-5 h-5 text-gray-900" />
-                        </Link>
-                        <button className="p-3 bg-gradient-to-r from-pink-500 to-rose-500 rounded-full shadow-lg hover:scale-110 transition-all duration-300">
-                          <ShoppingBag className="w-5 h-5 text-white" />
-                        </button>
-                      </div>
-                    </div>
-
-                    <div className="p-6 relative">
-                      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-px bg-gradient-to-r from-transparent via-pink-300 to-transparent"></div>
-                      
-                      <h4 className="text-lg font-bold mb-3 text-gray-900 group-hover:text-pink-600 transition-colors duration-300">
-                        {translatedName}
-                      </h4>
-                      
-                      <div className="flex items-center gap-2 mb-4">
-                        <div className="flex text-amber-400">
-                          {[...Array(5)].map((_, i) => (
-                            <Star
-                              key={i}
-                              className={`w-4 h-4 transition-all duration-300 ${
-                                i < Math.floor(product.rating) 
-                                  ? 'fill-current scale-100' 
-                                  : 'text-gray-300 scale-90'
-                              }`}
-                            />
-                          ))}
-                        </div>
-                        <span className="text-sm text-gray-600 font-medium">
-                          {product.rating} ({product.reviews})
-                        </span>
-                      </div>
-
-                      <div className="flex justify-between items-center">
-                        <div>
-                          <span className="text-3xl font-bold bg-gradient-to-r from-pink-600 to-amber-600 bg-clip-text text-transparent">
-                             {t('currency')}{product.price}
-                          </span>
-                        </div>
-                        <Link
-                          href={`/product/${product.id}`}
-                          className="px-5 py-2.5 bg-gradient-to-r from-pink-500 to-rose-500 text-white rounded-xl font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300 flex items-center gap-2"
-                        >
-                          {t('bestsellers.view')}
-                          <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                        </Link>
-                      </div>
-
-                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 -skew-x-12 translate-x-full group-hover:translate-x-[-200%] transition-all duration-1000"></div>
-                    </div>
-                  </div>
-                </div>
-                )
+              <div className="relative h-80 bg-gradient-to-br from-pink-50 via-white to-amber-50 overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 
-               
-})}
+                <Image
+                  src={product.image}
+                  alt={product.name}
+                  width={400}
+                  height={400}
+                  className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 group-hover:rotate-2"
+                />
+
+                <div className="absolute inset-0 flex items-center justify-center gap-3 opacity-0 group-hover:opacity-100 transition-all duration-500">
+                  <Link 
+                    href={`/product/${product.id}`}
+                    className="p-3 bg-white rounded-full shadow-lg hover:bg-gray-50 hover:scale-110 transition-all duration-300"
+                  >
+                    <Eye className="w-5 h-5 text-gray-900" />
+                  </Link>
+                  {/* FIXED: Shopping Bag Button */}
+                  <button 
+                    className="p-3 rounded-full shadow-lg hover:scale-110 transition-all duration-300"
+                    style={{ background: 'linear-gradient(to right, #ec4899, #f43f5e)' }}
+                  >
+                    <ShoppingBag className="w-5 h-5 text-white" />
+                  </button>
+                </div>
+              </div>
+
+              <div className="p-6 relative z-10">
+                <div 
+                  className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-px"
+                  style={{ background: 'linear-gradient(to right, transparent, #f9a8d4, transparent)' }}
+                ></div>
+                
+                <h4 className="text-lg font-bold mb-3 text-gray-900 group-hover:text-pink-600 transition-colors duration-300">
+                  {translatedName}
+                </h4>
+                
+                <div className="flex items-center gap-2 mb-4">
+                  <div className="flex text-amber-400">
+                    {[...Array(5)].map((_, i) => (
+                      <Star
+                        key={i}
+                        className={`w-4 h-4 transition-all duration-300 ${
+                          i < Math.floor(product.rating) 
+                            ? 'fill-current scale-100' 
+                            : 'text-gray-300 scale-90'
+                        }`}
+                      />
+                    ))}
+                  </div>
+                  <span className="text-sm text-gray-600 font-medium">
+                    {product.rating} ({product.reviews})
+                  </span>
+                </div>
+
+                <div className="flex justify-between items-center">
+                  <div>
+                    <span className="text-3xl font-bold text-pink-600">
+                      {t('currency')}{product.price}
+                    </span>
+                  </div>
+                  {/* FIXED: View Button */}
+                  <Link
+                    href={`/product/${product.id}`}
+                    className="px-5 py-2.5 text-white rounded-xl font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300 flex items-center gap-2"
+                    style={{ 
+                      background: 'linear-gradient(to right, #ec4899, #f43f5e)'
+                    }}
+                  >
+                    {t('bestsellers.view')}
+                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  </Link>
+                </div>
+
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 -skew-x-12 translate-x-full group-hover:translate-x-[-200%] transition-all duration-1000 pointer-events-none"></div>
+              </div>
             </div>
           </div>
-        </section>
+        )
+      })}
+    </div>
+  </div>
+</section>
 
         {/* Brand Story */}
         <section className="relative py-16 md:py-24 bg-gradient-to-r from-pink-50/50 via-white to-green-50/50 overflow-hidden">
-          <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-96 h-96 bg-yellow-100 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-pulse"></div>
-          <div className="absolute bottom-10 left-20 w-72 h-72 bg-pink-200 rounded-full mix-blend-multiply filter blur-3xl opacity-15 animate-pulse" style={{ animationDelay: '1s' }}></div>
+          <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-96 h-96 bg-yellow-100 rounded-full filter blur-3xl opacity-10 animate-pulse"></div>
+          <div className="absolute bottom-10 left-20 w-72 h-72 bg-pink-200 rounded-full filter blur-3xl opacity-15 animate-pulse" style={{ animationDelay: '1s' }}></div>
 
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
             <h3 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">{t('story.title')}</h3>
-            <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-8 border border-pink-100/30 shadow-lg">
+            <div className="bg-white/60 rounded-2xl p-8 border border-pink-100/30 shadow-lg">
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                 {t('story.text1')}
               </p>
@@ -315,8 +354,8 @@ useEffect(() => {
 
         {/* Natural Beauty Section */}
         <section className="relative py-20 md:py-32 bg-gradient-to-br from-purple-50 via-white to-pink-50 overflow-hidden">
-          <div className="absolute top-20 left-10 w-96 h-96 bg-gradient-to-br from-purple-200 to-pink-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float-slow"></div>
-          <div className="absolute bottom-20 right-10 w-80 h-80 bg-gradient-to-br from-pink-200 to-rose-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float-slow" style={{ animationDelay: '2s' }}></div>
+          <div className="absolute top-20 left-10 w-96 h-96 bg-purple-200 rounded-full filter blur-3xl opacity-20 animate-float-slow"></div>
+          <div className="absolute bottom-20 right-10 w-80 h-80 bg-pink-200 rounded-full filter blur-3xl opacity-20 animate-float-slow" style={{ animationDelay: '2s' }}></div>
           
           <div className="absolute top-40 right-1/4 text-purple-300/30 animate-pulse" style={{ animationDuration: '3s' }}>
             <Sparkles className="w-8 h-8" />
@@ -329,24 +368,28 @@ useEffect(() => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
               
               <div className="space-y-8 animate-fade-in-left">
-                <div className="absolute top-20 left-10 w-96 h-96 bg-gradient-to-br from-purple-200 to-pink-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 ios-gradient-fix"
-                       style={{ backgroundColor: '#f4e2ff' }} >
-                          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-purple-100 to-pink-100 text-sm font-semibold text-gray-700 border border-purple-200/50">
+                {/* FIXED: Natural Badge */}
+                <div 
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold text-gray-700 border border-purple-200/50"
+                  style={{ background: 'linear-gradient(to right, #f3e8ff, #fce7f3)' }}
+                >
                   <Sparkles className="w-4 h-4 text-purple-500" />
                   <span>{t('natural.badge')}</span>
-                          </div>
-                  </div>
-
-                
+                </div>
 
                 <div className="space-y-4">
                   <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
                     {t('natural.title1')}
-                    <span className="block mt-2 bg-gradient-to-r from-purple-600 via-pink-600 to-rose-600 bg-clip-text text-transparent">
+                    {/* FIXED: Gradient text replaced with solid color */}
+                    <span className="block mt-2 text-purple-600">
                       {t('natural.title2')}
                     </span>
                   </h2>
-                  <div className="h-1 w-24 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full"></div>
+                  {/* FIXED: Divider line */}
+                  <div 
+                    className="h-1 w-24 rounded-full"
+                    style={{ background: 'linear-gradient(to right, #a855f7, #ec4899)' }}
+                  ></div>
                 </div>
 
                 <p className="text-lg text-gray-600 leading-relaxed">
@@ -365,7 +408,11 @@ useEffect(() => {
                       className="flex items-start gap-3 group animate-fade-in-left"
                       style={{ animationDelay: `${0.2 + index * 0.1}s` }}
                     >
-                      <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      {/* FIXED: Check icon circle */}
+                      <div 
+                        className="flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+                        style={{ background: 'linear-gradient(to bottom right, #a855f7, #ec4899)' }}
+                      >
                         <Check className="w-4 h-4 text-white" strokeWidth={3} />
                       </div>
                       <span className="text-gray-700 font-medium group-hover:text-purple-600 transition-colors duration-300">
@@ -376,7 +423,11 @@ useEffect(() => {
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                  <button className="group relative px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-xl font-semibold overflow-hidden hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl">
+                  {/* FIXED: Discover Button */}
+                  <button 
+                    className="group relative px-8 py-4 text-white rounded-xl font-semibold overflow-hidden hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl"
+                    style={{ background: 'linear-gradient(to right, #9333ea, #ec4899)' }}
+                  >
                     <span className="relative z-10 flex items-center justify-center gap-2">
                       <Link href="/shop">
                         {t('natural.btnDiscover')}
@@ -406,20 +457,28 @@ useEffect(() => {
                       <div className="absolute inset-0 bg-gradient-to-t from-purple-900/20 via-transparent to-transparent"></div>
                     </div>
 
-                    <div className="absolute top-6 right-6 bg-white/95 backdrop-blur-sm rounded-2xl px-5 py-3 shadow-xl animate-float-slow">
+                    <div className="absolute top-6 right-6 bg-white/95 rounded-2xl px-5 py-3 shadow-xl animate-float-slow">
                       <div className="flex items-center gap-2">
-                        <div className="w-3 h-3 rounded-full bg-gradient-to-r from-green-400 to-emerald-500 animate-pulse"></div>
+                        {/* FIXED: Pulse dot */}
+                        <div 
+                          className="w-3 h-3 rounded-full animate-pulse"
+                          style={{ background: 'linear-gradient(to right, #4ade80, #10b981)' }}
+                        ></div>
                         <span className="text-sm font-bold text-gray-900">{t('natural.badgeText')}</span>
                       </div>
                     </div>
                   </div>
 
-                  <div className="absolute -top-6 -left-6 w-32 h-32 bg-gradient-to-br from-purple-300 to-pink-300 rounded-full opacity-60 blur-2xl animate-pulse"></div>
-                  <div className="absolute -bottom-6 -right-6 w-40 h-40 bg-gradient-to-br from-pink-300 to-rose-300 rounded-full opacity-60 blur-2xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+                  <div className="absolute -top-6 -left-6 w-32 h-32 bg-purple-300 rounded-full opacity-60 blur-2xl animate-pulse"></div>
+                  <div className="absolute -bottom-6 -right-6 w-40 h-40 bg-pink-300 rounded-full opacity-60 blur-2xl animate-pulse" style={{ animationDelay: '1s' }}></div>
 
-                  <div className="absolute -bottom-8 -left-8 bg-white/95 backdrop-blur-xl rounded-2xl p-6 shadow-2xl border border-white/50 animate-float-slow max-w-[200px]" style={{ animationDelay: '1.5s' }}>
+                  <div className="absolute -bottom-8 -left-8 bg-white/95 rounded-2xl p-6 shadow-2xl border border-white/50 animate-float-slow max-w-[200px]" style={{ animationDelay: '1.5s' }}>
                     <div className="flex items-center gap-3">
-                      <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-100 to-pink-100 flex items-center justify-center text-2xl">
+                      {/* FIXED: Icon background */}
+                      <div 
+                        className="w-12 h-12 rounded-xl flex items-center justify-center text-2xl"
+                        style={{ background: 'linear-gradient(to bottom right, #f3e8ff, #fce7f3)' }}
+                      >
                         🌸
                       </div>
                       <div>

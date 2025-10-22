@@ -51,3 +51,18 @@ body {
   -webkit-mask-image: -webkit-radial-gradient(white, black);
   transform: translateZ(0);
 }
+
+
+/* Add to your global CSS for better iOS gradient support */
+@supports (-webkit-backdrop-filter: blur(10px)) {
+  .backdrop-blur-xl {
+    -webkit-backdrop-filter: blur(24px);
+    backdrop-filter: blur(24px);
+  }
+}
+
+/* Force hardware acceleration on iOS */
+.transform {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
