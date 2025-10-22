@@ -2,9 +2,11 @@
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { ShoppingBag, Menu, X } from 'lucide-react';
+import Image from 'next/image';
 import LanguageSwitcher from './LanguageSwitcher';
 import { useLanguage } from '@/app/context/LanguageContext';
 import { CartItem, getCartFromStorage } from '@/lib/utils';
+import logo from '@/images/logo.png';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,11 +37,18 @@ export default function Header() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          <Link href="/" className="flex-shrink-0">
-            <h1 className="text-2xl font-bold">
+          <Link href="/" className="flex-shrink-0 flex items-center gap-3">
+            <Image 
+              src={logo} 
+              alt="Beauty Bernoussi Logo" 
+              width={220} 
+              height={200}
+              className="object-contain"
+            />
+            {/* <h1 className="text-xl font-bold">
               <span className="luxury-gold">Beauty</span>
               <span className="text-gray-900">Bernoussi</span>
-            </h1>
+            </h1> */}
           </Link>
 
           <nav className="hidden md:flex gap-8">

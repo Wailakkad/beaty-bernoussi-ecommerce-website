@@ -445,6 +445,46 @@
     "ingredients": ["Sels d’aluminium", "Agents hydratants", "Glycérine", "Parfum"],
     "skinType": ["Tous types de peau"],
     "usage": "Appliquer une fine couche sur peau propre et sèche, de préférence le soir. Laisser sécher avant de s’habiller. Ne pas utiliser sur peau irritée."
+  },
+   "44": {
+    "name": "Palette de Contouring Professionnelle",
+    "description": "Palette de contouring professionnelle avec 16 teintes pour sculpter et illuminer le visage.",
+    "fullDescription": "Une palette complète avec 8 teintes de contour et 8 teintes d'illuminateur. Formule crémeuse et modulable qui se fond parfaitement dans la peau. Des nuances allant du clair au foncé pour s'adapter à toutes les carnations. Facile à estomper pour un résultat naturel et professionnel.",
+    "ingredients": ["Talc", "Mica", "Vitamine E", "Huiles naturelles", "Pigments minéraux"],
+    "skinType": ["Tous types de peau"],
+    "usage": "Appliquer les teintes foncées sur les zones à creuser (creux des joues, côtés du nez, tempes) et les teintes claires sur les zones à illuminer (haut des pommettes, arête du nez, arcade sourcilière). Estomper soigneusement."
+  },
+   "45": {
+    "name": "Maybelline Fit Me Fond de Teint SPF18",
+    "description": "Fond de teint lumineux et lissant avec SPF18 pour une peau éclatante et protégée toute la journée.",
+    "fullDescription": "Formule légère à moyenne couvrance qui unifie le teint et masque les imperfections. Protection solaire SPF18 intégrée. Fini lumineux naturel qui ne dessèche pas la peau. Convient aux peaux normales à sèches. Teinte 115 adaptée aux carnations moyennes à dorées.",
+    "ingredients": ["SPF18", "Pigments minéraux", "Glycérine", "Vitamines", "Agents hydratants"],
+    "skinType": ["Peaux normales", "Peaux sèches"],
+    "usage": "Appliquer quelques gouttes sur le visage propre et hydraté. Estomper du centre vers l'extérieur avec un pinceau, une éponge ou les doigts. Peut être superposé pour plus de couvrance."
+  },
+   "46": {
+    "name": "Rouge à Lèvres Velvet Matte - Romantic Matte",
+    "description": "Rouge à lèvres mat velouté pour un effet classique et sophistiqué. Teinte nude rosée universelle.",
+    "fullDescription": "Formule crémeuse ultra-pigmentée qui glisse sur les lèvres pour un fini mat velouté. Tenue longue durée sans dessécher. Teinte nude rosée parfaite pour un look naturel et élégant au quotidien. Ne migre pas et ne s'estompe pas.",
+    "ingredients": ["Pigments haute intensité", "Huiles nourrissantes", "Cires végétales", "Vitamine E"],
+    "skinType": ["Tous types de lèvres"],
+    "usage": "Appliquer directement sur les lèvres en partant du centre vers les commissures. Pour plus de précision, utiliser un crayon contour des lèvres de teinte similaire."
+  },
+   "47": {
+    "name": "Vernis à Ongles Riveel",
+    "description": "Vernis à ongles haute brillance, teinte bronze métallique. Séchage rapide et tenue longue durée.",
+    "fullDescription": "Formule enrichie pour une application lisse et uniforme dès la première couche. Teinte bronze cuivrée sophistiquée avec reflets métalliques. Pinceau ergonomique pour une application précise. Tenue jusqu'à 7 jours sans écaillage. Volume : 10ml (0.35fl.oz).",
+    "ingredients": ["Résines polymères", "Pigments métalliques", "Plastifiants", "Solvants"],
+    "skinType": ["Tous types d'ongles"],
+    "usage": "Appliquer une base protectrice, puis 1 à 2 couches de vernis en laissant sécher entre chaque couche. Terminer avec un top coat pour prolonger la tenue et intensifier la brillance."
+  },
+   "48": {
+    "name": "Gel pour Sourcils BBrose Brow Breakdown",
+    "description": "Gel transparent pour sourcils qui fixe, discipline et structure pour un effet naturel toute la journée.",
+    "fullDescription": "Formule gel transparente légère qui maintient les sourcils en place sans effet cartonné. Texture non collante qui sèche rapidement. Enrichie en agents conditionneurs pour nourrir les poils. Brosse précise pour une application facile et un résultat impeccable. Convient à toutes les couleurs de sourcils.",
+    "ingredients": ["Polymères fixateurs", "Glycérine", "Agents conditionneurs", "Panthénol"],
+    "skinType": ["Tous types de sourcils"],
+    "usage": "Brosser les sourcils vers le haut et légèrement vers l'extérieur avec la brosse applicatrice. Laisser sécher quelques secondes. Peut être utilisé seul ou après un crayon/poudre à sourcils."
   }
 },
 "product": {

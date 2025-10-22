@@ -443,6 +443,46 @@
     "ingredients": ["Aluminum salts", "Moisturizing agents", "Glycerin", "Fragrance"],
     "skinType": ["All skin types"],
     "usage": "Apply a thin layer to clean, dry underarms, preferably in the evening. Allow to dry before dressing. Do not use on irritated skin."
+  },
+   "44": {
+    "name": "Contour Palette Professional",
+    "description": "Professional contouring palette with 16 shades to sculpt and highlight the face.",
+    "fullDescription": "A complete palette with 8 contour shades and 8 highlighter shades. Creamy and buildable formula that blends seamlessly into the skin. Shades ranging from light to dark to suit all skin tones. Easy to blend for a natural and professional result.",
+    "ingredients": ["Talc", "Mica", "Vitamin E", "Natural oils", "Mineral pigments"],
+    "skinType": ["All skin types"],
+    "usage": "Apply dark shades to areas to contour (hollows of cheeks, sides of nose, temples) and light shades to areas to highlight (top of cheekbones, bridge of nose, brow bone). Blend thoroughly."
+  },
+   "45": {
+    "name": "Maybelline Fit Me Foundation SPF18",
+    "description": "Luminous and smoothing foundation with SPF18 for radiant and protected skin all day long.",
+    "fullDescription": "Lightweight formula with light to medium coverage that evens skin tone and conceals imperfections. Built-in SPF18 sun protection. Natural luminous finish that doesn't dry out skin. Suitable for normal to dry skin. Shade 115 adapted to medium to golden skin tones.",
+    "ingredients": ["SPF18", "Mineral pigments", "Glycerin", "Vitamins", "Moisturizing agents"],
+    "skinType": ["Normal skin", "Dry skin"],
+    "usage": "Apply a few drops to clean and moisturized face. Blend from center outward with a brush, sponge or fingers. Can be layered for more coverage."
+  },
+   "46": {
+    "name": "Velvet Matte Lipstick - Romantic Matte",
+    "description": "Velvety matte lipstick for a classic and sophisticated effect. Universal rosy nude shade.",
+    "fullDescription": "Ultra-pigmented creamy formula that glides on lips for a velvety matte finish. Long-lasting wear without drying. Perfect rosy nude shade for a natural and elegant everyday look. Doesn't feather or fade.",
+    "ingredients": ["High-intensity pigments", "Nourishing oils", "Plant waxes", "Vitamin E"],
+    "skinType": ["All lip types"],
+    "usage": "Apply directly to lips starting from the center towards the corners. For more precision, use a lip liner in a similar shade."
+  },
+   "47": {
+    "name": "Riveel Nail Polish",
+    "description": "High-shine nail polish, metallic bronze shade. Quick-drying and long-lasting wear.",
+    "fullDescription": "Enriched formula for smooth and even application from the first coat. Sophisticated coppery bronze shade with metallic reflections. Ergonomic brush for precise application. Lasts up to 7 days without chipping. Volume: 10ml (0.35fl.oz).",
+    "ingredients": ["Polymer resins", "Metallic pigments", "Plasticizers", "Solvents"],
+    "skinType": ["All nail types"],
+    "usage": "Apply a protective base coat, then 1 to 2 coats of polish allowing to dry between each coat. Finish with a top coat to extend wear and intensify shine."
+  },
+   "48": {
+    "name": "BBrose Brow Breakdown Gel",
+    "description": "Transparent brow gel that sets, disciplines and structures for a natural effect all day long.",
+    "fullDescription": "Lightweight transparent gel formula that holds brows in place without a stiff feel. Non-sticky texture that dries quickly. Enriched with conditioning agents to nourish hairs. Precise brush for easy application and flawless results. Suitable for all brow colors.",
+    "ingredients": ["Setting polymers", "Glycerin", "Conditioning agents", "Panthenol"],
+    "skinType": ["All brow types"],
+    "usage": "Brush brows upward and slightly outward with the applicator brush. Allow to dry for a few seconds. Can be used alone or after brow pencil/powder."
   }
 },
 "product": {
